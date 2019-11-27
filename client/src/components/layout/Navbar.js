@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import logo from '../../images/31labs_logo_horz_rev.png'
+import './Navbar.css'
 
 const Navbar = ({ title, icon }) => {
 
