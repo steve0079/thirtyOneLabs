@@ -24,13 +24,14 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #666;
+  color: rgba(255, 255, 255, .5);
 }
+
 
 ul {
   list-style: none;

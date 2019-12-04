@@ -10,13 +10,14 @@ import Products from './components/pages/Products'
 import About from './components/pages/About'
 import Register from './components/pages/Register'
 import Login from './components/pages/Login'
+import Inventory from './components/pages/Inventory'
 
 const App = () => {
   return (
     <Router>
       <Fragment>
         <Navbar />
-        <div>
+        <div className="container">
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/process' component={Process} />
@@ -24,6 +25,7 @@ const App = () => {
             <Route exact path='/about' component={About} />
             <Route exact path='/register' component={Register} />
             <Route exact path='/login' component={Login} />
+            <Route exact path='/inventory' component={Inventory} />
           </Switch>
         </div>
         <Footer />

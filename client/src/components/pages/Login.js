@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import homeimage from '../../images/NLMLAB5b.jpg'
+
 
 const Login = () => {
+    
     return (
-        <div>
-            Login
+        <div className="background">
+            <img src={homeimage} alt="" />
         </div>
     )
 }

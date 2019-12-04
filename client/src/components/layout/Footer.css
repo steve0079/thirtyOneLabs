@@ -4,16 +4,47 @@
     height: 100%;
 }
 
-.footer-columns {
-    padding: 60px 0px;
-    column-count: 3;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    padding: 10px;
 }
 
-li {
+.copyright {
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 100;
+    letter-spacing: .1em;
+    color: white;
+    padding-top: 1rem;
+}
+
+.item1 {
+    margin: 0 30px;
+    grid-column: 1 / 2;
+}
+
+.footer-header {
+    grid-column: 2 / 3;
     color: white;
     font-size: 20px;
     font-family: 'Avenir Next', sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     width: 100%;
     text-align: left;
+}
+
+.footer-body {
+    grid-column: 3 / 4;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 700px) {
+    /* Footer */
 }

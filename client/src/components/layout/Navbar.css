@@ -5,17 +5,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.7rem 2rem;
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 17vh;
+    height: 15vh;
     margin-bottom: 2rem;
 }
 
 .navbar ul {
     display: flex;
-    font-weight: 100;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 300;
 }
 
 .navbar a {
@@ -29,7 +30,7 @@
 }
 
 .navbar a:active {
-    color: #05334c;
+    color: #f33f40;
 }
 
 .navbar .welcome span {
@@ -38,23 +39,7 @@
 
 /* Mobile Styles */
 
-@media (max-width: 400px) {
-    .hide-sm {
-        display: none;
-    }
-    .grid-2, .grid-3, .grid-4 {
-        grid-template-columns: 1fr;
-    }
-    /* Text Styles */
-    .x-large {
-        font-size: 3rem;
-    }
-    .large {
-        font-size: 2rem;
-    }
-    .lead {
-        font-size: 1rem;
-    }
+@media (max-width: 700px) {
     /* Navbar */
     .navbar {
         display: block;
