@@ -2,11 +2,8 @@
     font-size: 2.5rem;
     font-family: 'Avenir Next', sans-serif;
     font-weight: 300;
-    width: 100%;
     text-align: center;
-    display: inline-block;
     color: white;
-    position: relative;
     margin-bottom: 15px;
     letter-spacing: 2px;
 }

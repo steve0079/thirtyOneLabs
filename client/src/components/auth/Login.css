@@ -1,0 +1,33 @@
+div img {
+    z-index: 1;
+}
+
+.login-background {
+    background-color: #41738e;
+}
+
+.form-group {
+    margin: 1.2rem 0;
+}
+
+.form-group input {
+    margin: 0.2rem 0;
+}
+
+.login-form-container {
+    display: grid;
+    position: absolute;
+    height: 50%;
+    width: 40%;
+    top: 30%;
+    left: 30%;
+    background-color: white;
+    margin: 2rem auto;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    z-index: 2;
+}
+
+.login-form-container h1, h2, h3 {
+    text-align: center;
+}

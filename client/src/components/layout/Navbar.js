@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/31labs_logo_horz_rev.png'
 import './Navbar.css'
 
-const Navbar = ({ title, icon }) => {
+const Navbar = ({ title }) => {
 
     const logoStyle = {
-        padding: '1vh 0 0 0',
         height: '40%',
         width: '40%'
     }
@@ -19,12 +18,22 @@ const Navbar = ({ title, icon }) => {
             </h1>
             <ul>
                 <li>
-                <Link to='/'>Home</Link>
-                <Link to='/process'>Our Process</Link>
-                <Link to='/products'>Our Products</Link>
-                <Link to='/about'>About Us</Link>
-                <Link to='/register'>Register</Link>
-                <Link to='/login'>Login</Link>
+                    <Link to='/'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/process'>Our Process</Link>
+                </li>
+                <li>
+                    <Link to='/products'>Our Products</Link>
+                </li>
+                <li>
+                    <Link to='/about'>About Us</Link>
+                </li>
+                <li>
+                    <Link to='/register'>Register</Link>
+                </li>
+                <li>
+                    <Link to='/login'>Login</Link>
                 </li>
             </ul>
         </div>
@@ -32,9 +41,7 @@ const Navbar = ({ title, icon }) => {
 }
 
 Navbar.propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string,
-
+    title: PropTypes.string.isRequired
 }
 
 Navbar.defaultProps = {

@@ -8,29 +8,32 @@ import Home from './components/pages/Home'
 import Process from './components/pages/Process'
 import Products from './components/pages/Products'
 import About from './components/pages/About'
-import Register from './components/pages/Register'
-import Login from './components/pages/Login'
-import Inventory from './components/pages/Inventory'
+import Register from './components/auth/Register'
+import Login from './components/auth/Login'
+import InventoryLayout from './components/pages/InventoryLayout'
+import InventoryState from './context/inventory/InventoryState'
 
 const App = () => {
   return (
-    <Router>
-      <Fragment>
-        <Navbar />
-        <div className="container">
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/process' component={Process} />
-            <Route exact path='/products' component={Products} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/register' component={Register} />
-            <Route exact path='/login' component={Login} />
-            <Route exact path='/inventory' component={Inventory} />
-          </Switch>
-        </div>
-        <Footer />
-      </Fragment>
-    </Router>
+    <InventoryState>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <div className="container">
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/process' component={Process} />
+              <Route exact path='/products' component={Products} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/register' component={Register} />
+              <Route exact path='/login' component={Login} />
+              <Route exact path='/inventory' component={InventoryLayout} />
+            </Switch>
+          </div>
+          <Footer />
+        </Fragment>
+      </Router>
+    </InventoryState>
   );
 }
 

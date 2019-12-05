@@ -1,0 +1,33 @@
+div img {
+    z-index: 1;
+}
+
+.register-background {
+    background-color: #41738e;
+}
+
+.form-group {
+    margin: 1.2rem 0;
+}
+
+.form-group input {
+    margin: 0.2rem 0;
+}
+
+.register-form-container {
+    display: grid;
+    position: absolute;
+    height: 65%;
+    width: 40%;
+    top: 20%;
+    left: 30%;
+    background-color: white;
+    margin: 2rem auto;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    z-index: 2;
+}
+
+.register-form-container h1, h2, h3 {
+    text-align: center;
+}

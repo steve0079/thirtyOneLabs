@@ -7,7 +7,6 @@ import logo from '../../images/31labs_logo_horz_rev.png'
 const AgeVerification = () => {
 
     const logoStyle = {
-        padding: '1vh 0 0 0',
         height: '50%',
         width: '50%'
     }

@@ -211,27 +211,6 @@ button {
   font: inherit;
 }
 
-.form-group {
-  margin: 1.2rem 0;
-}
-
-.form-group input {
-  margin: 0.2rem 0;
-}
-
-.form-container {
-  max-width: 500px;
-  margin: 2rem auto;
-  overflow: hidden;
-  padding: 0 2rem;
-}
-
-.form-container h1,
-h2,
-h3 {
-  text-align: center;
-}
-
 table th,
 table td {
   padding: 1rem;
@@ -241,45 +220,6 @@ table td {
 table th {
   background: var(--light-color);
 }
-
-/* Navbar */
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.7rem 2rem;
-  z-index: 1;
-  width: 100%;
-  border-bottom: solid 1px var(--primary-color);
-  opacity: 0.9;
-  margin-bottom: 1rem;
-}
-
-.navbar ul {
-  display: flex;
-}
-
-.navbar a {
-  color: #fff;
-  padding: 0.45rem;
-  margin: 0 0.25rem;
-}
-
-.navbar a:hover {
-  color: var(--light-color);
-}
-
-.navbar a:hover {
-  color: #f33f40;
-}
-
-.navbar a:active {
-  color: #05334c;
-}
-
-.navbar .welcome span {
-  margin-right: 0.6rem;
-} */
 
 /* Animation (Add After) */
 .item-enter {
