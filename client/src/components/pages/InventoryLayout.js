@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import './InventoryLayout.css'
 import Inventory from '../inventory/Inventory';
+import InventoryForm from '../inventory/InventoryForm'
+import InventoryFilter from '../inventory/InventoryFilter'
+
 
 const InventoryLayout = () => {
     return (
-        <div className="grid-3">
-            <div>{/* Inventory Form */}</div>
-            <div>
-                <Inventory />
+        <Fragment>
+            <div className="grid-2">
+                <div>
+                    <InventoryForm />
+                </div>
+                <div>
+                    <InventoryFilter />
+                    <Inventory />
+                </div>
             </div>
-        </div>
-    )
-}
-
-export default InventoryLayout
+        </Fragment>
+            )
+        }
+        
+        export default InventoryLayout

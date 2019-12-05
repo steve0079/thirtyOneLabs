@@ -17,9 +17,8 @@ div img {
 .login-form-container {
     display: grid;
     position: absolute;
-    height: 50%;
     width: 40%;
-    top: 30%;
+    top: 25%;
     left: 30%;
     background-color: white;
     margin: 2rem auto;

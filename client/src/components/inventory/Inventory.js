@@ -5,14 +5,19 @@ import InventoryContext from '../../context/inventory/InventoryContext';
 const Inventory = () => {
     const inventoryContext = useContext(InventoryContext);
 
-    const { inventory } = inventoryContext;
+    const { inventory, filtered } = inventoryContext;
+
+    if (inventory.length === 0) {
+        return <h4>Please add a Product</h4>
+    }
 
 
     return (
         <Fragment>
-            {inventory.map(inventory => (
-                <InventoryItem key={inventory.id} inventory={inventory} />
-            ))}
+            {filtered !== null ? filtered.map(inventory => <InventoryItem key={inventory.id}
+                inventory={inventory} />) : inventory.map(inventory => (
+                    <InventoryItem key={inventory.id} inventory={inventory} />
+                ))}
         </Fragment>
     )
 }

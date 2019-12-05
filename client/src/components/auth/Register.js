@@ -30,7 +30,7 @@ const Register = () => {
                 <form onSubmit={onSubmit}>
                     <div className="form-group">
                         <label 
-                            htmlFor="name">Nam
+                            htmlFor="name">Name
                         </label>
                         <input 
                             type="text" 

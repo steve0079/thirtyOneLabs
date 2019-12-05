@@ -1,0 +1,14 @@
+div div img {
+    z-index: 1;
+}
+
+.inventory-container {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    margin: 2rem auto;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    z-index: 2;
+}

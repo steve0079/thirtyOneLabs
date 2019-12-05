@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import PropTypes from 'prop-types';
+import InventoryContext from '../../context/inventory/InventoryContext'
+
 
 const InventoryItem = ({ inventory }) => {
+    const inventoryContext = useContext(InventoryContext);
+    const { deleteInventory, setCurrent, clearCurrent } =inventoryContext;
 
-    const { id, lot, quantity, thc, cbd, total, description, price } = inventory;
+
+    const { id, name, quantity, thc, cbd, total, description, price } = inventory;
+
+    const onDelete = () => {
+        deleteInventory(id);
+        clearCurrent();
+    }
 
     return (
         <div className="card bg-light">
             <h3 className="text-primary text-left">
-                <strong>Lot: </strong>{lot}
+                <strong>Lot: </strong>{name}
             </h3>
             <ul className="list">
                 {quantity && (
@@ -41,8 +52,14 @@ const InventoryItem = ({ inventory }) => {
                     </li>
                 )}
             </ul>
+            <p className="btn btn-dark btn-sm" onClick={() => setCurrent(inventory)} >Edit Inventory</p>
+            <p className="btn btn-danger btn-sm" onClick={onDelete}>Delete Inventory</p>
         </div>
     )
+}
+
+InventoryItem.propTypes = {
+    inventory: PropTypes.object.isRequired,
 }
 
 export default InventoryItem

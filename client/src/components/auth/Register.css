@@ -17,7 +17,6 @@ div img {
 .register-form-container {
     display: grid;
     position: absolute;
-    height: 65%;
     width: 40%;
     top: 20%;
     left: 30%;
