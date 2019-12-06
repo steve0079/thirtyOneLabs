@@ -27,7 +27,7 @@ const InventoryFilter = () => {
                 ref={text} 
                 type="text" 
                 placeholder="Filter Inventory..." 
-                onchange={onChange}
+                onChange={onChange}
             />
         </form>
     )

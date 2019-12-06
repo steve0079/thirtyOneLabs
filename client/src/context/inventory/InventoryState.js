@@ -130,19 +130,20 @@ const InventoryState = props => {
 
     return (
         <InventoryContext.Provider
-        value={{
-            inventory: state.inventory,
-            current: state.current,
-            filtered: state.filtered,
-            addInventory,
-            deleteInventory,
-            setCurrent,
-            clearCurrent,
-            updateInventory,
-            filterInventory,
-            clearFilter
-        }}>
-            { props.children }
+            value={{
+                inventory: state.inventory,
+                current: state.current,
+                filtered: state.filtered,
+                addInventory,
+                deleteInventory,
+                setCurrent,
+                clearCurrent,
+                updateInventory,
+                filterInventory,
+                clearFilter
+            }}
+        >
+            {props.children}
         </InventoryContext.Provider>
     )
 }

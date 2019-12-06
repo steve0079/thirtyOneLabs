@@ -14,6 +14,7 @@ app.get('/', (req, res) => res.json({ msg: "Welcome to ThirtyOne Labs App"}));
 //Define Routes
 app.use('/api/users', require('./routes/users'))
 app.use('/api/auth', require('./routes/auth'))
+app.use('/api/inventory', require('./routes/inventory'))
 
 const PORT = process.env.PORT || 5000;
 

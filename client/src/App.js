@@ -18,7 +18,7 @@ const App = () => {
     <InventoryState>
       <Router>
         <Fragment>
-          {/* <Navbar /> */}
+          <Navbar />
           <div className="container">
             <Switch>
               <Route exact path='/' component={Home} />

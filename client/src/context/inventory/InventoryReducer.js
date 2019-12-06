@@ -40,7 +40,7 @@ export default (state, action) => {
                         ...state,
                         filtered: state.inventory.filter(inventory => {
                             const regex = new RegExp(`${action.payload}`, 'gi')
-                            return state.inventory.name.match(regex)
+                            return inventory.name.match(regex)
                         })
                     }
             case CLEAR_FILTER:

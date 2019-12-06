@@ -6,10 +6,7 @@ const config = require('config');
 const auth = require('../middleware/auth');
 const { check, validationResult } = require('express-validator');
 
-
-
 const User = require('../models/User');
-
 
 // @route   GET  api/auth
 // @desc    Get logged in user
