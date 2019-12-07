@@ -67,29 +67,29 @@ router.put('/:id', auth, async (req, res) => {
 
     //Build contact object
     const inventoryFields = {};
-    if(name) inventoryFields.name = name;
-    if(quantity) inventoryFields.quantity = quantity;
-    if(thc) inventoryFields.thc = thc;
-    if(cbd) inventoryFields.cbd = cbd;
-    if(total) inventoryFields.total = total;
-    if(description) inventoryFields.description = description;
-    if(price) inventoryFields.price = price;
+    if (name) inventoryFields.name = name;
+    if (quantity) inventoryFields.quantity = quantity;
+    if (thc) inventoryFields.thc = thc;
+    if (cbd) inventoryFields.cbd = cbd;
+    if (total) inventoryFields.total = total;
+    if (description) inventoryFields.description = description;
+    if (price) inventoryFields.price = price;
 
     try {
         let inventory = await Inventory.findById(req.params.id)
 
-        if(!inventory) return res.status(404).json({ msg: 'Product not found' });
+        if (!inventory) return res.status(404).json({ msg: 'Product not found' });
 
         //Make sure user owns product
-        if(inventory.user.toString() !== req.user.id) {
+        if (inventory.user.toString() !== req.user.id) {
             return res.status(401).json({ msg: 'Not authorized' })
         }
 
-        inventory = await Inventory.findByIdAndUpdate(req.params.id, 
-            { $set: inventoryFields},
+        inventory = await Inventory.findByIdAndUpdate(req.params.id,
+            { $set: inventoryFields },
             { new: true });
 
-            res.json(inventory)
+        res.json(inventory)
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Server Error')
@@ -99,8 +99,24 @@ router.put('/:id', auth, async (req, res) => {
 // @route   DELETE  api/inventory/:id
 // @desc    Delete product 
 // @access  Private
-router.delete('/:_id', (req, res) => {
-    res.send('Delete inventory product');
+router.delete('/:id', auth, async (req, res) => {
+    try {
+        let inventory = await Inventory.findById(req.params.id)
+
+        if (!inventory) return res.status(404).json({ msg: 'Product not found' });
+
+        //Make sure user owns product
+        if (inventory.user.toString() !== req.user.id) {
+            return res.status(401).json({ msg: 'Not authorized' })
+        }
+
+        await Inventory.findByIdAndRemove(req.params.id)
+
+        res.json({ msg: "Product removed" })
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error')
+    }
 });
 
 module.exports = router;
