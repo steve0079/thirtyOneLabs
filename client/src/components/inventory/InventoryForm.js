@@ -34,7 +34,7 @@ const InventoryForm = () => {
         price: ''
     });
 
-    const { id, name, quantity, thc, cbd, total, description, price } = inventory;
+    const { name, quantity, thc, cbd, total, description, price } = inventory;
 
     const onChange = e => setInventory({ ...inventory, [e.target.name]: e.target.value });
 

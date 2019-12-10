@@ -11,7 +11,7 @@ const Inventory = require('../models/Inventory')
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const inventory = await Inventory.find({ user: req.user.id }).sort({ date: -1 });
+        const inventory = await Inventory.find({ user: req.user.id }).sort({ date: 1 });
         res.json(inventory)
     } catch (err) {
         console.error(err.message);

@@ -1,11 +1,12 @@
 .age-verification {
     display: grid;
     position: absolute;
-    height: 50%;
-    width: 40%;
-    top: 30%;
-    left: 30%;
-    background-color: rgba(65, 115, 142);
+    height: 40%;
+    width: 33.3%;
+    top: 33.3%;
+    left: 33.3%;
+    background-color: rgba(65, 115, 142, .8);
+    border-radius: 4px;
     z-index: 3;
     align-content: center;
     text-align: center;

@@ -8,10 +8,10 @@ const InventoryItem = ({ inventory }) => {
     const { deleteInventory, setCurrent, clearCurrent } =inventoryContext;
 
 
-    const { id, name, quantity, thc, cbd, total, description, price } = inventory;
+    const { _id, name, quantity, thc, cbd, total, description, price } = inventory;
 
     const onDelete = () => {
-        deleteInventory(id);
+        deleteInventory(_id);
         clearCurrent();
     }
 
