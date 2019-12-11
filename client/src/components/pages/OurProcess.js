@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Process = () => {
+const OurProcess = () => {
     return (
         <div>
             Our Process
@@ -8,4 +8,4 @@ const Process = () => {
     )
 }
 
-export default Process
+export default OurProcess

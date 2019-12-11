@@ -1,0 +1,71 @@
+.productTitle {
+    position: absolute;
+    top:30%;
+    left: 39%;
+    background-color: rgba(65, 115, 142);
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: white;
+    padding: 5px 40px;
+}
+
+.iconContainer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+}
+
+.icon {
+    display: grid;
+    justify-items: center;
+    width: 6rem;
+    margin-bottom: 10px;
+}
+
+.iconTitle {
+    text-align: center;
+    font-family: 'Avenir Next', sans-serif;
+    color: rgba(65, 115, 142);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.productContainer {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    grid-template-columns: 250px 125px 125px 600px 150px;
+    grid-template-rows: repeat(7, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+}
+
+.productItemImage {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: #999;
+    margin: 0 30px 10px;
+}
+
+.productSpecs {
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.productInfo {
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+

@@ -18,7 +18,6 @@ const Inventory = () => {
         return <h4>Please add a Product</h4>
     }
 
-
     return (
         <Fragment>
             {inventory !== null && !loading ? (

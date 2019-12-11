@@ -5,7 +5,8 @@ import './App.css';
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Home from './components/pages/Home'
-import Process from './components/pages/Process'
+import OurProcess from './components/pages/OurProcess'
+import OurProducts from './components/pages/OurProducts'
 import Products from './components/pages/Products'
 import About from './components/pages/About'
 import Register from './components/auth/Register'
@@ -33,12 +34,13 @@ const App = () => {
               <div className="container">
                 <Switch>
                   <Route exact path='/' component={Home} />
-                  <Route exact path='/process' component={Process} />
-                  <Route exact path='/products' component={Products} />
-                  <Route exact path='/about' component={About} />
+                  <Route exact path='/process' component={OurProcess} />
+                  <Route exact path='/our_products' component={OurProducts} />
+                  <Route exact path='/aboutus' component={About} />
                   <Route exact path='/register' component={Register} />
                   <Route exact path='/login' component={Login} />
                   <PrivateRoute exact path='/inventory' component={InventoryLayout} />
+                  <PrivateRoute exact path='/products' component={Products} />
                 </Switch>
               </div>
               <Footer />

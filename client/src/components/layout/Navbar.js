@@ -27,7 +27,22 @@ const Navbar = ({ title }) => {
 
     const authLinks = (
         <Fragment>
-            <li>Hello { user && user.name }</li>
+            <li>
+                    <Link to='/'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/products'>Products</Link>
+                </li>
+                <li>
+                    <Link to='/our_process'>Our Process</Link>
+                </li>
+                <li>
+                    <Link to='/aboutus'>About Us</Link>
+                </li>
+                <li>
+                    <Link to='/inventory'>Inventory</Link>
+                </li>
+            <li><strong>Hello { user && user.name }</strong></li>
             <li>
                 <a onClick={onLogout} href="#!">
                     <i className="fas fa-sign-out-alt"></i> <span className="hide-sm">Logout</span>
@@ -42,13 +57,13 @@ const Navbar = ({ title }) => {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/process'>Our Process</Link>
+                    <Link to='/our_process'>Our Process</Link>
                 </li>
                 <li>
-                    <Link to='/products'>Our Products</Link>
+                    <Link to='/our_products'>Our Products</Link>
                 </li>
                 <li>
-                    <Link to='/about'>About Us</Link>
+                    <Link to='/aboutus'>About Us</Link>
                 </li>
                 <li>
                     <Link to='/register'>Register</Link>
@@ -56,7 +71,6 @@ const Navbar = ({ title }) => {
                 <li>
                     <Link to='/login'>Login</Link>
                 </li>
-
         </Fragment>
     )
 
