@@ -3,7 +3,7 @@ import AlertContext from '../../context/alert/alertContext'
 import AuthContext from '../../context/auth/authContext'
 
 import './Login.css'
-import homeimage from '../../images/NLMLAB1b.jpg'
+import homeimage from '../../images/NLMLAB_6_1500x.jpg'
 
 
 const Login = (props) => {
@@ -84,7 +84,9 @@ const Login = (props) => {
                     />
                 </form>
             </div>
-            <img src={homeimage} alt="" />
+            <div className="login-main-image">
+                <img src={homeimage} alt="" />
+            </div>
         </div>
     )
 }

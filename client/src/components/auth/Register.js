@@ -5,7 +5,7 @@ import AlertContext from '../../context/alert/alertContext'
 import AuthContext from '../../context/auth/authContext'
 
 import './Register.css'
-import homeimage from '../../images/NLMLAB8b.jpg'
+import homeimage from '../../images/NLMLAB_6_1500x.jpg'
 
 
 const Register = (props) => {
@@ -80,7 +80,9 @@ const Register = (props) => {
                     <input type="submit" value="Register" className="btn btn-primary btn-block" />
                 </form>
             </div>
-            <img src={homeimage} alt="" />
+            <div className="register-main-image">
+                <img src={homeimage} alt="" />
+            </div>
         </div>
     )
 }

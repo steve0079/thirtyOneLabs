@@ -8,17 +8,20 @@
     letter-spacing: 1px;
 }
 
-div div img {
-    z-index:1;
-}
-
 .background {
     background-color: #41738e;
 }
 
 .verify-display {
-    display: flex;
-    justify-content: center;
+    margin-top: 80px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.home-main-image {
+    display: block;
+    width: 100%;
+    margin: -20% 0;
 }
 
 .video_container {

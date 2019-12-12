@@ -60,7 +60,7 @@ const Navbar = ({ title }) => {
                     <Link to='/our_process'>Our Process</Link>
                 </li>
                 <li>
-                    <Link to='/our_products'>Our Products</Link>
+                    <Link to='/our_product'>Our Product</Link>
                 </li>
                 <li>
                     <Link to='/aboutus'>About Us</Link>

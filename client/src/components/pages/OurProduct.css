@@ -1,0 +1,57 @@
+.OurProductContainer {
+    display: grid;
+    margin: 8rem 20rem 0;
+    position: relative;
+    hyphens: none;
+    text-align: center;
+}
+
+.product-section-title {
+    font-size: 2.5rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.left {
+    text-align: left;
+}
+
+.productbody {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    hyphens: none;
+    padding-bottom: 30px;
+}
+
+.ourProductImageContainer {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px;
+    margin: 30px;
+    overflow: hidden;
+}
+
+.ourProductItemImage {
+    width: 100%;
+    height: 325px;
+}
+
+.thcDistillateContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 60px;
+    margin: 60px 30px;
+}
+
+.thcDistillateImage {
+    width: 375px;
+    height: 375px;
+}

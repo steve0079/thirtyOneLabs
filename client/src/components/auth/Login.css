@@ -1,9 +1,8 @@
-div img {
-    z-index: 1;
-}
-
 .login-background {
     background-color: #41738e;
+    margin-top: 80px;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .form-group {
@@ -29,4 +28,10 @@ div img {
 
 .login-form-container h1, h2, h3 {
     text-align: center;
+}
+
+.login-main-image {
+    display: block;
+    width: 100%;
+    margin: -20% 0;
 }
