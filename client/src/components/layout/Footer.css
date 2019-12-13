@@ -14,9 +14,11 @@
 .copyright {
     font-family: 'Avenir Next', sans-serif;
     font-weight: 100;
-    letter-spacing: .1em;
+    font-size: .9rem;
+    letter-spacing: 1px;
     color: white;
-    padding-top: 1rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 .item1 {
@@ -41,6 +43,19 @@
     font-family: 'Avenir Next', sans-serif;
     font-weight: 100;
     text-align: left;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f33f40;
+}
+
+a:active {
+    color: #f33f40;
 }
 
 /* Mobile Styles */

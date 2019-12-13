@@ -4,15 +4,11 @@ import './AgeVerification.css';
 import logo from '../../images/31labs_logo_horz_rev.png'
 
 
-const AgeVerification = () => {
+const AgeVerification = ({ setAge }) => {
 
     const logoStyle = {
         height: '50%',
         width: '50%'
-    }
-
-    const uponEnter = () => {
-        
     }
 
 
@@ -25,7 +21,7 @@ const AgeVerification = () => {
                 <p className="ageStatement">Must be 21 years or older to enter.</p>
                 <p className="ageSubtext">Please click enter to verify your age to continue.</p>
                 <div className="">
-                    <a href={uponEnter}> <button className="btn btn-danger age-button">Enter</button></a>
+                    <button className="btn btn-danger age-button" onClick={() => setAge(true)} >Enter</button>
                     <a href="http://google.com"> <button className="btn btn-dark age-button">Exit</button></a>
                 </div>
             </div>

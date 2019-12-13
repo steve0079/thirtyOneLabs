@@ -32,9 +32,9 @@ const Footer = () => {
                     <p className="footer-body">Join our mailing list for pricing and inventory updates. Please enter your email address below.</p>
                     <input type="email" name="email" value={subscriber.email} onChange={onChange} placeholder="email@example.com" />
                     <button className="btn btn-danger">Subscribe</button>
-                    <p className="copyright">ThirtyOne Labs. 2020. ALL RIGHTS RESERVED.</p>
                 </div>
             </div>
+                    <p className="copyright">ThirtyOne Labs. 2020. ALL RIGHTS RESERVED.</p>
         </div>
     )
 }

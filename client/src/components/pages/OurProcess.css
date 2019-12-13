@@ -1,11 +1,11 @@
 .process-background {
-    background-color: #333;
+    background-color: rgba(65, 115, 142, 1);
 }
 
 .processImage {
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    margin: 6rem 30px 30px;
 }
 
 .process-section-title {
@@ -19,12 +19,11 @@
 
 .process_text_container {
     display: grid;
-    padding: 40px;
+    padding: 40px 100px;
     position: relative;
-    width: 83.333%;
-    left: 8.333%;
     hyphens: none;
     text-align: center;
+    background-color: #333;
 }
 
 .processbody {

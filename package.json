@@ -19,6 +19,7 @@
     "config": "^3.2.4",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
+    "infinite-react-carousel": "^1.2.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.12"
   },

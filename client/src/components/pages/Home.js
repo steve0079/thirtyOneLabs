@@ -1,18 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css';
-import AgeVerification from '../layout/AgeVerification'
 import RegisterLogin from '../layout/RegisterLogin'
 import homeimage from '../../images/NLMLAB_6_1500x.jpg'
 import videoimage from '../../images/NLMLAB_videoImage.jpg'
 import supplyimage from '../../images/NLMLAB_2_1200x.jpg'
 import processimage from '../../images/NLMLAB_8_1200x.jpg'
+import AgeVerification from '../layout/AgeVerification'
+
 const Home = () => {
+
+    const [age, setAge] = useState(false)
+
+    useEffect(() => {
+        document.title = 'Home | ThirtyOneLabs'
+    })
+
     return (
         <div className="background">
             <div className="verify-display">
-                <RegisterLogin />
-                {/* <AgeVerification /> */}
+                {age ? <RegisterLogin /> : <AgeVerification setAge={setAge}/>}
                 <div className="home-main-image">
                     <img src={homeimage} alt="" />
                 </div>
@@ -23,8 +30,12 @@ const Home = () => {
                 <a href="mailto:sales@ThirtyOneLabs.com"><button className="btn btn-danger">Buy Now</button></a>
             </div>
             <div className="video_container">
-            <img src={videoimage} alt=""/>
-            <a href="https://youtu.be/aCSH0lYnZ2c"><i className="fab fa-youtube fa-5x" /></a>
+                <div className="video_play">
+                    <a href="https://youtu.be/aCSH0lYnZ2c" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube fa-7x" /></a>
+                </div>
+                <div className="video-image">
+                    <img src={videoimage} alt="" />
+                </div>
             </div>
             <div className="home_callout_container">
                 <h3 className="homepage-section-subtitle">FIXED PRICE. MAXIMUM POTENCY. GUARANTEED SUPPLY.</h3>

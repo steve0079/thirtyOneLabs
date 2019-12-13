@@ -1,10 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 
 import ProcessImage from '../../images/NLMLAB131920x1080b.jpg'
-
+import Carousel from '../layout/Carousel'
 import './OurProcess.css'
 
 const OurProcess = () => {
+
+    useEffect(() => {
+        document.title = 'Our Process | ThirtyOneLabs'
+    })
 
     return (
         <Fragment>
@@ -19,6 +23,7 @@ const OurProcess = () => {
                     </div>
                 </div>
             </div>
+            <Carousel />
         </Fragment>
     )
 }

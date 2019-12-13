@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './OurProduct.css'
 import THCDist from '../../images/NLMLAB8b.jpg'
 import Prod1 from '../../images/NLMLAB_2_1200x.jpg'
@@ -9,6 +9,10 @@ import Prod4 from '../../images/NLMLAB_10_1200x.jpg'
 
 
 const OurProduct = () => {
+
+    useEffect(() => {
+        document.title = 'Our Product | ThirtyOneLabs'
+    })
     return (
         <div>
             <div className="OurProductContainer">

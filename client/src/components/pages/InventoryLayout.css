@@ -12,3 +12,13 @@ div div img {
     padding: 8rem 2rem;
     z-index: 2;
 }
+
+ul {
+    list-style: none;
+}
+
+.card {
+    padding: 1rem;
+    border: #ccc 1px dotted;
+    margin: 0.7rem 0;
+}

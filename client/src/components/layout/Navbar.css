@@ -13,40 +13,24 @@
     margin-bottom: 2rem;
 }
 
-.navbar ul {
+.navbar-links {
     display: flex;
     font-family: 'Avenir Next', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
+    list-style: none;
 }
 
-.navbar a {
+.navbar-link {
     color: #fff;
+    text-decoration: none;
     padding: 0.45rem;
     margin: 0 0.25rem;
 }
 
-.navbar a:hover {
+.navbar-link:hover {
     color: #f33f40;
 }
 
-.navbar a:active {
+.navbar-link.current:active {
     color: #f33f40;
-}
-
-
-/* Mobile Styles */
-
-@media (max-width: 700px) {
-    /* Navbar */
-    .navbar {
-        display: block;
-        text-align: center;
-    }
-    .navbar h1 {
-        margin-bottom: 0.6rem;
-    }
-    .navbar ul {
-        text-align: center;
-        justify-content: center;
-    }
 }

@@ -38,9 +38,9 @@
 }
 
 .promise-section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Avenir Next', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     color: white;
     letter-spacing: 1px;
@@ -57,3 +57,73 @@
     padding-bottom: .5rem;
 }
 
+.vision_container {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+.vision-title {
+    font-size: 1.75rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.vision-subtitle {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.visionbody {
+    font-size: 1.5rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    padding: 0 3rem;
+}
+
+.visionImage {
+    display: block;
+    width: 100%;
+}
+
+.ourfamily {
+    background: #f78f4e;
+    font-size: 1.9rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    padding: 2rem 0;
+}
+
+.lab_container {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+.labs-title {
+    font-size: 1.6rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.labsbody {
+    font-size: 1.33rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 100;
+    padding: 0 3rem;
+}

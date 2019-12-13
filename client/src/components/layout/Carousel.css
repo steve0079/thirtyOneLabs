@@ -1,0 +1,24 @@
+.carousel-image-container {
+    overflow: hidden;
+    height: 65vh;
+}
+
+.carousel-image {
+    display: block;
+    width: 100%;
+    margin: -15% 0;
+}
+
+.carousel-image-text {
+    position: absolute;
+    top: 40%;
+    margin: 0 80px;
+    font-size: 1.3rem;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    hyphens: none;
+    padding: 20px 40px;
+    background-color: #333;
+}

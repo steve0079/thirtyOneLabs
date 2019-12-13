@@ -11,6 +11,7 @@ const InventoryLayout = () => {
 
     useEffect(() => {
         authContext.loadUser();
+        document.title = 'Inventory | ThirtyOneLabs'
 
         // eslint-disable-next-line
     }, [])

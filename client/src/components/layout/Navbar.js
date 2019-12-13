@@ -27,23 +27,23 @@ const Navbar = ({ title }) => {
 
     const authLinks = (
         <Fragment>
-            <li>
-                    <Link to='/'>Home</Link>
-                </li>
-                <li>
-                    <Link to='/products'>Products</Link>
-                </li>
-                <li>
-                    <Link to='/our_process'>Our Process</Link>
-                </li>
-                <li>
-                    <Link to='/aboutus'>About Us</Link>
-                </li>
-                <li>
-                    <Link to='/inventory'>Inventory</Link>
-                </li>
-            <li><strong>Hello { user && user.name }</strong></li>
-            <li>
+            <li className="navbar-link">
+                <Link to='/'>Home</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/products'>Products</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/our_process'>Our Process</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/aboutus'>About Us</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/inventory'>Inventory</Link>
+            </li>
+            <li className="navbar-link"><strong>Hello {user && user.name}</strong></li>
+            <li className="navbar-link">
                 <a onClick={onLogout} href="#!">
                     <i className="fas fa-sign-out-alt"></i> <span className="hide-sm">Logout</span>
                 </a>
@@ -53,24 +53,24 @@ const Navbar = ({ title }) => {
 
     const guestLinks = (
         <Fragment>
-                <li>
-                    <Link to='/'>Home</Link>
-                </li>
-                <li>
-                    <Link to='/our_process'>Our Process</Link>
-                </li>
-                <li>
-                    <Link to='/our_product'>Our Product</Link>
-                </li>
-                <li>
-                    <Link to='/aboutus'>About Us</Link>
-                </li>
-                <li>
-                    <Link to='/register'>Register</Link>
-                </li>
-                <li>
-                    <Link to='/login'>Login</Link>
-                </li>
+            <li className="navbar-link">
+                <Link to='/'>Home</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/our_process'>Our Process</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/our_product'>Our Product</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/aboutus'>About Us</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/register'>Register</Link>
+            </li>
+            <li className="navbar-link">
+                <Link to='/login'>Login</Link>
+            </li>
         </Fragment>
     )
 
@@ -79,7 +79,7 @@ const Navbar = ({ title }) => {
             <h1>
                 <img style={logoStyle} src={logo} alt="ThirtyOne Labs" />
             </h1>
-            <ul>
+            <ul className="navbar-links">
                 {isAuthenticated ? authLinks : guestLinks}
             </ul>
         </div>

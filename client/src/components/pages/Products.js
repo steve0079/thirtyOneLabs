@@ -10,12 +10,13 @@ import T7 from '../../images/type7-icon.svg'
 import './Products.css';
 
 const Products = () => {
-    // const authContext = useContext(AuthContext);
+    const authContext = useContext(AuthContext);
 
-    // useEffect(() => {
-    //     authContext.loadUser();
-    //     // eslint-disable-next-line
-    // }, [])
+    useEffect(() => {
+        authContext.loadUser();
+            document.title = 'Products | ThirtyOneLabs'
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <Fragment>

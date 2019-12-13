@@ -23,20 +23,6 @@ body {
   color: #333;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgba(255, 255, 255, .5);
-}
-
-
-ul {
-  list-style: none;
-}
-
 img {
   width: 100%;
 }
@@ -87,13 +73,6 @@ img {
 
 .text-left {
   text-align: left;
-}
-
-/* Cards */
-.card {
-  padding: 1rem;
-  border: #ccc 1px dotted;
-  margin: 0.7rem 0;
 }
 
 /* List */
@@ -237,7 +216,7 @@ table th {
   transition: opacity 1000ms ease-in;
 }
 
-Mobile Styles
+/* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
     display: none;
