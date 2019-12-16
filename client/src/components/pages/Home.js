@@ -13,7 +13,7 @@ const Home = () => {
     const [age, setAge] = useState(false)
 
     useEffect(() => {
-        document.title = 'Home | ThirtyOneLabs'
+        document.title = 'Home | ThirtyOneLabs | 2020'
     })
 
     return (

@@ -1,15 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import logo from '../../images/31labs_logo_horz_rev.png'
+
 import './RegisterLogin.css';
 
 
 const RegisterLogin = () => {
 
+    const logoStyle = {
+        height: '50%',
+        width: '50%'
+    }
 
     return (
         <div>
             <div className="register-login">
+                <h1>
+                    <img style={logoStyle} src={logo} alt="ThirtyOne Labs" />
+                </h1>
                 <div>
                     <Link to='/register'>
                         <button className="btn btn-dark register-button">REGISTER</button>

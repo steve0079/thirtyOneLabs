@@ -1,12 +1,13 @@
 .register-login {
     display: grid;
     position: absolute;
-    height: 33%;
-    width: 33.3%;
+    height: 350px;
+    width: 600px;
     top: 33.3%;
     left: 33.3%;
     background-color: rgba(65, 115, 142);
-    border-radius: 4px;
+    border-radius: 12px;
+    box-shadow: 8px 6px 10px #333;
     z-index: 2;
     align-content: center;
     text-align: center;
@@ -16,8 +17,8 @@
     font-size: 1.rem;
     font-family: 'Avenir Next', sans-serif;
     font-weight: 200;
-    margin: 1rem;
-    width: 50%;
+    margin: 2rem 1rem;
+    width: 200px;
 }
 
 .subtext {
@@ -33,6 +34,6 @@
 }
 
 #guestStart {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const multer = require('multer')
 
 const InventorySchema = mongoose.Schema({
     user: {
@@ -32,6 +33,9 @@ const InventorySchema = mongoose.Schema({
     price: {
         type: String,
         required: true
+    },
+    img: {
+        data: Buffer, contentType: String
     },
     date: {
         type: Date,

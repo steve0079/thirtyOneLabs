@@ -4,13 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7rem 2rem;
+    padding: 30px;
     z-index: 3;
     position: fixed;
-    top: 0;
     width: 100%;
-    height: 15vh;
-    margin-bottom: 2rem;
+    height: 150px;
 }
 
 .navbar-links {
@@ -28,9 +26,5 @@
 }
 
 .navbar-link:hover {
-    color: #f33f40;
-}
-
-.navbar-link.current:active {
     color: #f33f40;
 }

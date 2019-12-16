@@ -18,7 +18,7 @@ const InventoryForm = () => {
                 cbd: '',
                 total: '',
                 description: '',
-                price: ''
+                price: '',
             })
         }
     }, [inventoryContext, current])
@@ -31,7 +31,7 @@ const InventoryForm = () => {
         cbd: '',
         total: '',
         description: '',
-        price: ''
+        price: '',
     });
 
     const { name, quantity, thc, cbd, total, description, price } = inventory;
