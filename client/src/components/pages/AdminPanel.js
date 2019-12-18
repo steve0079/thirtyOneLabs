@@ -1,12 +1,12 @@
 import React, { useContext, useEffect } from 'react'
-import './InventoryLayout.css'
+import './AdminPanel.css'
 import Inventory from '../inventory/Inventory';
 import InventoryForm from '../inventory/InventoryForm'
 import InventoryFilter from '../inventory/InventoryFilter'
 import AuthContext from '../../context/auth/authContext'
 
 
-const InventoryLayout = () => {
+const AdminPanel = () => {
     const authContext = useContext(AuthContext);
 
     useEffect(() => {
@@ -31,4 +31,4 @@ const InventoryLayout = () => {
     )
 }
 
-export default InventoryLayout
+export default AdminPanel

@@ -7,14 +7,14 @@ import NA from '../../images/noAdd-icon.svg'
 import C3 from '../../images/catIII-icon.svg'
 import THCP from '../../images/thcpotent-icon.svg'
 import T7 from '../../images/type7-icon.svg'
-import './Products.css';
+import './Inventory.css';
 
-const Products = () => {
+const Inventory = () => {
     const authContext = useContext(AuthContext);
 
     useEffect(() => {
         authContext.loadUser();
-            document.title = 'Products | ThirtyOneLabs'
+            document.title = 'Inventory | ThirtyOneLabs'
         // eslint-disable-next-line
     }, [])
 
@@ -205,4 +205,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default Inventory

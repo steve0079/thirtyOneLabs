@@ -4,14 +4,15 @@ import './App.css';
 
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import LandingPage from './components/pages/LandingPage'
 import Home from './components/pages/Home'
 import OurProcess from './components/pages/OurProcess'
 import OurProduct from './components/pages/OurProduct'
-import Products from './components/pages/Products'
+import Inventory from './components/pages/Inventory'
 import About from './components/pages/About'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
-import InventoryLayout from './components/pages/InventoryLayout'
+import AdminPanel from './components/pages/AdminPanel'
 import PrivateRoute from './components/routing/PrivateRoute'
 
 import InventoryState from './context/inventory/InventoryState'
@@ -33,14 +34,15 @@ const App = () => {
               <Navbar />
               <div className="container">
                 <Switch>
-                  <Route exact path='/' component={Home} />
+                  <Route exact path='/' component={LandingPage} />
+                  <Route exact path='/home' component={Home} />
                   <Route exact path='/our_process' component={OurProcess} />
                   <Route exact path='/our_product' component={OurProduct} />
+                  <Route exact path='/inventory' component={Inventory} />
                   <Route exact path='/aboutus' component={About} />
                   <Route exact path='/register' component={Register} />
                   <Route exact path='/login' component={Login} />
-                  <PrivateRoute exact path='/inventory' component={InventoryLayout} />
-                  <PrivateRoute exact path='/products' component={Products} />
+                  <PrivateRoute exact path='/admin' component={AdminPanel} />
                 </Switch>
               </div>
               <Footer />

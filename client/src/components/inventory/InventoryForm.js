@@ -34,13 +34,20 @@ const InventoryForm = () => {
         price: '',
     });
 
+    const [imageData, setImageData] = useState('');
+
     const { name, quantity, thc, cbd, total, description, price } = inventory;
 
     const onChange = e => setInventory({ ...inventory, [e.target.name]: e.target.value });
 
+    const setImage = (e) => {
+        setImageData(e.target.files[0])
+        console.log(e.target.files[0]);
+    }
+
     const onSubmit = e => {
         e.preventDefault();
-        if(current === null){
+        if (current === null) {
             addInventory(inventory);
         } else {
             updateInventory(inventory);
@@ -84,6 +91,7 @@ const InventoryForm = () => {
                 value={cbd}
                 onChange={onChange}
             />
+
             <input
                 type="text"
                 placeholder="Total Cann. %"
@@ -105,12 +113,18 @@ const InventoryForm = () => {
                 value={price}
                 onChange={onChange}
             />
+            <p className="text-dark left">Add An Image</p>
+            <input
+                type="file"
+                name="image"
+                onChange={setImage}
+            />
             <div>
                 <input type="submit" value={current ? 'Update Inventory' : 'Add Inventory'} className="btn btn-primary btn-block" />
             </div>
             {current && <div>
                 <button className="btn btn-light btn-block" onClick={clearAll}>Clear</button>
-            </div> }
+            </div>}
         </form>
     )
 }

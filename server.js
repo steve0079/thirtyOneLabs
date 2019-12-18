@@ -1,7 +1,7 @@
 const express = require('express');
 const connectDB = require('./config/db')
 
-const app =  express();
+const app = express();
 
 //Connect Database
 connectDB()
@@ -9,7 +9,7 @@ connectDB()
 //Init Middleware
 app.use(express.json({ extended: false }));
 
-app.get('/', (req, res) => res.json({ msg: "Welcome to ThirtyOne Labs App"}));
+app.get('/', (req, res) => res.json({ msg: "Welcome to ThirtyOne Labs App" }));
 
 //Define Routes
 app.use('/api/users', require('./routes/users'))

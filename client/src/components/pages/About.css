@@ -3,15 +3,15 @@
     margin-top: 7rem;
     padding: 50px;
     position: relative;
-    width: 83.333%;
-    left: 8.333%;
+    width: 80%;
+    left: 10%;
     hyphens: none;
 }
 
 .about-section-title {
     font-size: 2.5rem;
     font-family: 'Avenir Next', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
 }

@@ -1,6 +1,5 @@
 import React, { Fragment, useContext } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import AuthContext from '../../context/auth/authContext'
 import InventoryContext from '../../context/inventory/InventoryContext'
 
@@ -28,19 +27,10 @@ const Navbar = ({ title }) => {
     const authLinks = (
         <Fragment>
             <li className="navbar-link">
-                <Link to='/'>Home</Link>
+                <a href='/inventory'>Our Inventory</a>
             </li>
             <li className="navbar-link">
-                <Link to='/products'>Products</Link>
-            </li>
-            <li className="navbar-link">
-                <Link to='/our_process'>Our Process</Link>
-            </li>
-            <li className="navbar-link">
-                <Link to='/aboutus'>About Us</Link>
-            </li>
-            <li className="navbar-link">
-                <Link to='/inventory'>Inventory</Link>
+                <a href='/admin'>Admin</a>
             </li>
             <li className="navbar-link"><strong>Hello {user && user.name}</strong></li>
             <li className="navbar-link">
@@ -54,23 +44,26 @@ const Navbar = ({ title }) => {
     const guestLinks = (
         <Fragment>
             <li className="navbar-link">
-                <Link to='/'>Home</Link>
+                <a href='/home'>Home</a>
             </li>
             <li className="navbar-link">
-                <Link to='/our_process'>Our Process</Link>
+                <a href='/our_process'>Our Process</a>
             </li>
             <li className="navbar-link">
-                <Link to='/our_product'>Our Product</Link>
+                <a href='/our_product'>Our Product</a>
             </li>
             <li className="navbar-link">
-                <Link to='/aboutus'>About Us</Link>
+                <a href='/inventory'>Our Inventory</a>
             </li>
             <li className="navbar-link">
-                <Link to='/register'>Register</Link>
+                <a href='/aboutus'>About Us</a>
+            </li>
+            {/* <li className="navbar-link">
+                <a href='/register'>Register</a>
             </li>
             <li className="navbar-link">
-                <Link to='/login'>Login</Link>
-            </li>
+                <a href='/login'>Login</a>
+            </li> */}
         </Fragment>
     )
 

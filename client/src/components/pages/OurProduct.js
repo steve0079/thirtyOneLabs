@@ -25,7 +25,7 @@ const OurProduct = () => {
                     <h2 className="product-section-title left">THC distillate</h2>
                     <p className="productbody left">Our cannabis-derived THC distillate is the foundation for industry leading vape, edible, tincture, and topical brands. Easy to formulate, high potency, and consistent color. Current inventory, pricing, Certificates of Analysis, and supply contracts available upon request.</p>
                     <p className="productbody left"><strong>Potency 90%+ THC | No Additives |  Category III Compliant</strong></p>
-                    <button className="btn btn-danger">BUY NOW</button>
+                    <a href="/inventory"><button className="btn btn-danger">Our Inventory</button></a>
                 </div>
             </div>
             <div className="ourProductImageContainer">

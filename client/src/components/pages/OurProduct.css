@@ -1,6 +1,6 @@
 .OurProductContainer {
     display: grid;
-    margin: 10% 20% 0;
+    margin: 11% 20% 0;
     position: relative;
     hyphens: none;
     text-align: center;
@@ -9,7 +9,7 @@
 .product-section-title {
     font-size: 2.5rem;
     font-family: 'Avenir Next', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -40,8 +40,8 @@
 }
 
 .ourProductItemImage {
-    width: 100%;
-    height: 325px;
+    display: block;
+    width: 100%
 }
 
 .thcDistillateContainer {

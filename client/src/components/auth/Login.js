@@ -15,7 +15,7 @@ const Login = (props) => {
 
     useEffect(() => {
         if(isAuthenticated){
-            props.history.push('/inventory')
+            props.history.push('/admin')
         }
         if(error === 'Invalid Credentials') {
             setAlert(error, 'danger');

@@ -17,7 +17,7 @@ const About = () => {
             <div>
                 <div>
                     <div className="about_text_container">
-                        <h2 className="about-section-title">OUR MISSION</h2>
+                        <h2 className="about-section-title">Our Mission</h2>
                         <p className="aboutbody">Rooted in California, we are dedicated to the craft. With over a decade of experience in botanical extraction, we are also pioneers. We measure ourselves by our ability to improve quality and are committed to continuous improvement.</p>
                         <p className="aboutbody">We understand that quality, consistency and transparency are critical for the success of your business. We work with industry-leading brands, co-packers, manufacturers and distributors to truly power brands. High-quality THC distillate is the foundation for your brand and the foundation of our business.</p>
                     </div>

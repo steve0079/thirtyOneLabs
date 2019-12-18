@@ -19,8 +19,7 @@
 
 .process_text_container {
     display: grid;
-    padding: 40px 100px;
-    position: relative;
+    padding: 80px 220px;
     hyphens: none;
     text-align: center;
     background-color: #333;
@@ -34,6 +33,6 @@
     font-style: normal;
     color: white;
     hyphens: none;
-    padding-bottom: 30px;
+    padding: 20px 0 30px 0;
 }
 

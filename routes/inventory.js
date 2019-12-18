@@ -3,7 +3,6 @@ const router = express.Router();
 const auth = require('../middleware/auth')
 const { check, validationResult } = require('express-validator');
 
-const User = require('../models/User')
 const Inventory = require('../models/Inventory')
 
 // @route   GET  api/inventory
