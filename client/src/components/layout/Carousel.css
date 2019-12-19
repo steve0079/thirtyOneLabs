@@ -1,17 +1,17 @@
 .carousel-image-container {
     overflow: hidden;
-    height: 80vh;
+    height: 90vh;
 }
 
 .carousel-image {
     display: block;
     width: 100%;
-    margin: -15% 0;
+    margin: -10% 0;
 }
 
 .carousel-image-text {
     position: absolute;
-    top: 33%;
+    top: 40%;
     margin: 0 80px;
     font-size: 1.3rem;
     font-family: 'Avenir Next', sans-serif;

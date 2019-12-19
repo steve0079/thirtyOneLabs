@@ -22,7 +22,6 @@ const Inventory = () => {
         <Fragment>
             <div>
                 <img src={InventoryMain} alt="" />
-                <h2 className="productTitle">Our Inventory</h2>
                 <ul className="iconContainer">
                     <li><img src={PG} alt="" className="icon" /></li>
                     <li><img src={T7} alt="" className="icon" /></li>
@@ -35,6 +34,7 @@ const Inventory = () => {
                     <li className="iconTitle">Category III<br />compliant</li>
                     <li className="iconTitle">No additives</li>
                 </ul>
+                <h2 className="productTitle">Our Inventory</h2>
             </div>
             <div>
                 <div className="productContainer">

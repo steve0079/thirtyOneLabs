@@ -22,7 +22,7 @@ const AgeVerification = () => {
                 <p className="ageStatement">Must be 21 years or older to enter.</p>
                 <p className="ageSubtext">Please click enter to verify your age to continue.</p>
                 <div className="">
-                <Link to='/home'><button className="btn btn-danger age-button">Enter</button></Link>
+                <Link to='/home'><button className="btn btn-danger">Enter</button></Link>
                     <a href="http://google.com"> <button className="btn btn-dark age-button">Exit</button></a>
                 </div>
             </div>

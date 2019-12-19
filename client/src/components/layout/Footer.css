@@ -1,15 +1,14 @@
 .background-footer {
-    background-color: rgba(65, 115, 142, 1);
-    width: 100%;
-    height: 100%;
+    background-color: rgb(65, 115, 142);
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 50px;
-    padding: 10px;
-}
+    grid-gap: 60px;
+    padding: 30px 20px 10px 0;
+    border-top: 2px solid white;
+    box-shadow: 0 -2px 4px #333;}
 
 .copyright {
     font-family: 'Avenir Next', sans-serif;
@@ -23,11 +22,9 @@
 
 .item1 {
     margin: 0 30px;
-    grid-column: 1 / 2;
 }
 
 .footer-header {
-    grid-column: 2 / 3;
     color: white;
     font-size: 20px;
     font-family: 'Avenir Next', sans-serif;
@@ -37,7 +34,6 @@
 }
 
 .footer-body {
-    grid-column: 3 / 4;
     color: white;
     font-size: 1.2rem;
     font-family: 'Avenir Next', sans-serif;
@@ -56,10 +52,4 @@ a:hover {
 
 a:active {
     color: #f33f40;
-}
-
-/* Mobile Styles */
-
-@media (max-width: 700px) {
-    /* Footer */
 }

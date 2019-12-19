@@ -17,7 +17,7 @@ const OurProduct = () => {
         <div>
             <div className="OurProductContainer">
                 <h2 className="product-section-title">We Fuel your Brand</h2>
-                <p className="productbody">Our goal is to remove the risk, uncertainty and frustration from the procurement and product development process so that you can focus on what you do best… building your brand.</p>
+                <p className="productbody">Our goal is to remove the risk, uncertainty and frustration from the procurement and product development process so that you can focus on what you do best… <b><em>building your brand.</em></b></p>
             </div>
             <div className="thcDistillateContainer">
                 <img src={THCDist} alt="" className="thcDistillateImage" />

@@ -2,10 +2,30 @@
     background-color: rgba(65, 115, 142, 1);
 }
 
+.process-display {
+    margin-top: 30px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.scrollDown {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 75%;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+#processText {
+    padding-top: 140px;
+}
+
 .processImage {
     display: flex;
     justify-content: center;
-    margin: 6rem 30px 30px;
+    margin: 0 30px;
 }
 
 .process-section-title {
@@ -19,7 +39,7 @@
 
 .process_text_container {
     display: grid;
-    padding: 80px 220px;
+    padding: 120px 25%;
     hyphens: none;
     text-align: center;
     background-color: #333;
@@ -27,7 +47,7 @@
 
 .processbody {
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.8;
     font-family: 'Avenir Next', sans-serif;
     font-weight: 100;
     font-style: normal;

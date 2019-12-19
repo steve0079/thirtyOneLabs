@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import './Home.css';
 import homeimage from '../../images/NLMLAB_6_1500x.jpg'
@@ -15,6 +16,10 @@ const Home = () => {
     return (
         <div className="background">
             <div className="verify-display">
+                <div className="continueDown">
+                    <h3>Scroll Down</h3>
+                    <AnchorLink href="#guestStart"><i className="fas fa-chevron-circle-down fa-2x"/></AnchorLink>
+                </div>
                 <div className="home-main-image">
                     <img src={homeimage} alt="" />
                 </div>
@@ -45,7 +50,7 @@ const Home = () => {
                 <div className="lft-column2">
                     <h1>Supply Contracts <br />Available</h1>
                     <p className="lft-column-text" />
-                    <a href="/inventory"><button className="btn btn-danger">Contact Us</button></a>
+                    <a href="mailto:sales@ThirtyOneLabs.com"><button className="btn btn-danger">Contact Us</button></a>
                 </div>
             </div>
             <div className="home-grid-container">

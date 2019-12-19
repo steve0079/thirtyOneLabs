@@ -1,7 +1,8 @@
 .productTitle {
     position: absolute;
-    top:30%;
-    left: 39%;
+    top:50%;
+    left: 30%;
+    width: 750px;
     background-color: rgba(65, 115, 142);
     font-family: 'Avenir Next', sans-serif;
     font-weight: 300;
@@ -17,8 +18,8 @@
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 20px;
     position: absolute;
-    top: 45%;
-    left: 25%;
+    top: 30%;
+    left: 30%;
 }
 
 .icon {

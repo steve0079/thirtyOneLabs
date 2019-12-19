@@ -19,6 +19,7 @@ const InventoryForm = () => {
                 total: '',
                 description: '',
                 price: '',
+                image: ''
             })
         }
     }, [inventoryContext, current])
@@ -32,17 +33,23 @@ const InventoryForm = () => {
         total: '',
         description: '',
         price: '',
+        image: ''
     });
 
     const [imageData, setImageData] = useState('');
 
-    const { name, quantity, thc, cbd, total, description, price } = inventory;
+    const { name, quantity, thc, cbd, total, description, price, image } = inventory;
+
 
     const onChange = e => setInventory({ ...inventory, [e.target.name]: e.target.value });
 
     const setImage = (e) => {
         setImageData(e.target.files[0])
         console.log(e.target.files[0]);
+    }
+
+    const clearAll = () => {
+        clearCurrent();
     }
 
     const onSubmit = e => {
@@ -53,10 +60,6 @@ const InventoryForm = () => {
             updateInventory(inventory);
         }
         clearAll();
-    }
-
-    const clearAll = () => {
-        clearCurrent();
     }
 
     return (
@@ -117,6 +120,7 @@ const InventoryForm = () => {
             <input
                 type="file"
                 name="image"
+                value={image}
                 onChange={setImage}
             />
             <div>

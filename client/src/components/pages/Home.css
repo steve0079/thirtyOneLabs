@@ -18,10 +18,21 @@
     height: 100vh;
 }
 
+.continueDown {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 60%;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
 .home-main-image {
     display: block;
     width: 100%;
-    margin: -20% 0;
+    margin: -25% 0;
+    z-index: 1;
 }
 
 .subtext {
@@ -30,6 +41,7 @@
     font-weight: 500;
     color: white;
     text-align: center;
+    z-index: 2;
 }
 
 #guestStart {

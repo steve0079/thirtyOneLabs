@@ -5,6 +5,7 @@ const { check, validationResult } = require('express-validator');
 
 const Inventory = require('../models/Inventory')
 
+
 // @route   GET  api/inventory
 // @desc    Get all inventory
 // @access  Private
@@ -34,7 +35,7 @@ router.post('/', [auth,
             return res.status(400).json({ errors: errors.array() });
         }
 
-        const { name, quantity, thc, cbd, total, description, price } = req.body;
+        const { name, quantity, thc, cbd, total, description, price, image } = req.body;
 
         try {
             const newInventory = new Inventory({
@@ -45,6 +46,7 @@ router.post('/', [auth,
                 total,
                 description,
                 price,
+                image,
                 user: req.user.id
             })
 
@@ -62,7 +64,7 @@ router.post('/', [auth,
 // @desc    Update product inventory
 // @access  Private
 router.put('/:id', auth, async (req, res) => {
-    const { name, quantity, thc, cbd, total, description, price } = req.body;
+    const { name, quantity, thc, cbd, total, description, price, image } = req.body;
 
     //Build contact object
     const inventoryFields = {};
@@ -73,6 +75,7 @@ router.put('/:id', auth, async (req, res) => {
     if (total) inventoryFields.total = total;
     if (description) inventoryFields.description = description;
     if (price) inventoryFields.price = price;
+    if (image) inventoryFields.image = image;
 
     try {
         let inventory = await Inventory.findById(req.params.id)
