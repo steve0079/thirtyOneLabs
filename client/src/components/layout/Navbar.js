@@ -28,7 +28,7 @@ const Navbar = ({ title }) => {
             <li className="navbar-link"><a href='/inventory'>Our Inventory</a></li>
             <li className="navbar-link"><a href='/admin'>Admin</a></li>
             <li className="navbar-link"><strong>Hello {user && user.name}</strong></li>
-            <li className="navbar-link"><a onClick={onLogout} href="/home">
+            <li className="navbar-link"><a href="/home" onClick={onLogout}>
                 <i className="fas fa-sign-out-alt"></i> <span className="hide-sm">Logout</span></a>
             </li>
         </Fragment>
@@ -41,8 +41,8 @@ const Navbar = ({ title }) => {
             <li className="navbar-link"><a href='/our_product'>Our Product</a></li>
             <li className="navbar-link"><a href='/inventory'>Our Inventory</a></li>
             <li className="navbar-link"><a href='/aboutus'>About Us</a></li>
-            {/* <li className="navbar-link"><a href='/register'>Register</a></li>
-            <li className="navbar-link"><a href='/login'>Login</a></li> */}
+            {/* <li className="navbar-link"><a href='/register'>Register</a></li> */}
+            {/* <li className="navbar-link"><a href='/login'>Login</a></li> */}
         </Fragment>
     )
 

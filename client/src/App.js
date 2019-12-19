@@ -10,7 +10,7 @@ import OurProcess from './components/pages/OurProcess'
 import OurProduct from './components/pages/OurProduct'
 import Inventory from './components/pages/Inventory'
 import About from './components/pages/About'
-import Register from './components/auth/Register'
+// import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import AdminPanel from './components/pages/AdminPanel'
 import PrivateRoute from './components/routing/PrivateRoute'
@@ -34,15 +34,15 @@ const App = () => {
               <Navbar />
               <div className="container">
                 <Switch>
+                  <PrivateRoute exact path='/admin' component={AdminPanel} />
                   <Route exact path='/' component={LandingPage} />
                   <Route exact path='/home' component={Home} />
                   <Route exact path='/our_process' component={OurProcess} />
                   <Route exact path='/our_product' component={OurProduct} />
                   <Route exact path='/inventory' component={Inventory} />
                   <Route exact path='/aboutus' component={About} />
-                  <Route exact path='/register' component={Register} />
                   <Route exact path='/login' component={Login} />
-                  <PrivateRoute exact path='/admin' component={AdminPanel} />
+                  {/* <Route exact path='/register' component={Register} /> */}
                 </Switch>
               </div>
               <Footer />
