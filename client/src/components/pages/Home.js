@@ -1,5 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AgeContext from '../../context/age/ageContext'
+
 
 import './Home.css';
 import homeimage from '../../images/NLMLAB_6_1500x.jpg'
@@ -9,9 +11,15 @@ import processimage from '../../images/NLMLAB_8_1200x.jpg'
 
 const Home = () => {
 
+    const ageContext = useContext(AgeContext)
+
+    const { isAgeVerified } = ageContext;
+
     useEffect(() => {
-        document.title = 'Home | ThirtyOneLabs | 2020'
-    })
+        document.title = 'Home | ThirtyOneLabs'
+        isAgeVerified()
+        // eslint-disable-next-line
+    },[])
 
     return (
         <div className="background">

@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
+import AgeContext from '../../context/age/ageContext'
 
 import './AgeVerification.css';
 
 import logo from '../../images/31labs_logo_horz_rev.png'
-
 
 const AgeVerification = () => {
 
@@ -12,6 +12,10 @@ const AgeVerification = () => {
         height: '50%',
         width: '50%'
     }
+
+    const ageContext = useContext(AgeContext)
+
+    const { isAgeVerified } = ageContext;
 
     return (
         <div>
@@ -22,7 +26,7 @@ const AgeVerification = () => {
                 <p className="ageStatement">Must be 21 years or older to enter.</p>
                 <p className="ageSubtext">Please click enter to verify your age to continue.</p>
                 <div className="">
-                <Link to='/home'><button className="btn btn-danger">Enter</button></Link>
+                <Link to='/home'><button className="btn btn-danger" onClick={() => isAgeVerified()}>Enter</button></Link>
                     <a href="http://google.com"> <button className="btn btn-dark age-button">Exit</button></a>
                 </div>
             </div>

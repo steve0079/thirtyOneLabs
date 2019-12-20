@@ -1,5 +1,5 @@
 import React, { Fragment, useContext, useEffect } from 'react'
-import AuthContext from '../../context/auth/authContext'
+import AgeContext from '../../context/age/ageContext'
 
 import InventoryMain from '../../images/inventory_main.jpg'
 import PG from '../../images/pg-icon.svg'
@@ -10,11 +10,13 @@ import T7 from '../../images/type7-icon.svg'
 import './Inventory.css';
 
 const Inventory = () => {
-    const authContext = useContext(AuthContext);
+    const ageContext = useContext(AgeContext)
+
+    const { isAgeVerified } = ageContext;
 
     useEffect(() => {
-        authContext.loadUser();
-            document.title = 'Inventory | ThirtyOneLabs'
+        document.title = 'Inventory | ThirtyOneLabs'
+        isAgeVerified()
         // eslint-disable-next-line
     }, [])
 

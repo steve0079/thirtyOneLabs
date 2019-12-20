@@ -1,18 +1,25 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import './OurProduct.css'
 import THCDist from '../../images/NLMLAB8b.jpg'
 import Prod1 from '../../images/NLMLAB_2_1200x.jpg'
 import Prod2 from '../../images/NLMLAB_6_1200x.jpg'
 import Prod3 from '../../images/NLMLAB5b.jpg'
 import Prod4 from '../../images/NLMLAB_10_1200x.jpg'
+import AgeContext from '../../context/age/ageContext'
 
 
 
 const OurProduct = () => {
 
+    const ageContext = useContext(AgeContext)
+    const { isAgeVerified } = ageContext;
+
     useEffect(() => {
         document.title = 'Our Product | ThirtyOneLabs'
-    })
+        isAgeVerified()
+        // eslint-disable-next-line
+    },[])
+
     return (
         <div>
             <div className="OurProductContainer">

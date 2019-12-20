@@ -18,3 +18,4 @@ export const LOGIN_FAIL = 'LOGIN_FAIL';
 export const LOGOUT = 'LOGOUT';
 export const INVENTORY_ERROR = 'INVENTORY_ERROR';
 export const CLEAR_ERRORS = 'CLEAR_ERRORS';
+export const AGE_VERIFIED = 'AGE_VERIFIED'

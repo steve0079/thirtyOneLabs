@@ -1,15 +1,22 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useContext } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AgeContext from '../../context/age/ageContext'
 
 import ProcessImage from '../../images/NLMLAB131920x1080b.jpg'
-import Carousel from '../layout/Carousel'
+// import Carousel from '../layout/Carousel'
 import './OurProcess.css'
 
 const OurProcess = () => {
 
+    const ageContext = useContext(AgeContext)
+
+    const { isAgeVerified } = ageContext;
+
     useEffect(() => {
         document.title = 'Our Process | ThirtyOneLabs'
-    })
+        isAgeVerified()
+        // eslint-disable-next-line
+    },[])
 
     return (
         <Fragment>
@@ -29,7 +36,7 @@ const OurProcess = () => {
                     </div>
             </div>
             <div>
-            <Carousel />
+            {/* <Carousel /> */}
             </div>
         </Fragment>
     )

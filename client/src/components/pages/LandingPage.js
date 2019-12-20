@@ -8,7 +8,8 @@ const LandingPage = () => {
 
     useEffect(() => {
         document.title = 'Landing Page | ThirtyOneLabs | 2020'
-    })
+        // eslint-disable-next-line
+    },[])
 
     return (
         <Fragment>

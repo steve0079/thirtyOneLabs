@@ -1,4 +1,5 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useContext } from 'react'
+import AgeContext from '../../context/age/ageContext'
 
 import OurPromise from '../../images/NLMLABS_PromiseImage.jpg'
 import homeimage from '../../images/NLMLAB_6_1500x.jpg'
@@ -8,9 +9,15 @@ import './About.css'
 
 const About = () => {
 
+    const ageContext = useContext(AgeContext)
+
+    const { isAgeVerified } = ageContext;
+
     useEffect(() => {
         document.title = 'About Us | ThirtyOneLabs'
-    })
+        isAgeVerified()
+        // eslint-disable-next-line
+    },[])
 
     return (
         <Fragment>
