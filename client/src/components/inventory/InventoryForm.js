@@ -19,7 +19,6 @@ const InventoryForm = () => {
                 total: '',
                 description: '',
                 price: '',
-                image: ''
             })
         }
     }, [inventoryContext, current])
@@ -33,12 +32,11 @@ const InventoryForm = () => {
         total: '',
         description: '',
         price: '',
-        image: ''
     });
 
     const [imageData, setImageData] = useState('');
 
-    const { name, quantity, thc, cbd, total, description, price, image } = inventory;
+    const { name, quantity, thc, cbd, total, description, price } = inventory;
 
 
     const onChange = e => setInventory({ ...inventory, [e.target.name]: e.target.value });
@@ -120,7 +118,6 @@ const InventoryForm = () => {
             <input
                 type="file"
                 name="image"
-                value={image}
                 onChange={setImage}
             />
             <div>

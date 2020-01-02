@@ -2,8 +2,47 @@ const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth')
 const { check, validationResult } = require('express-validator');
+const multer = require('multer')
+const Grid = require('gridfs-stream')
+const GridFsStorage = require('multer-gridfs-storage')
+const crypto = require("crypto");
 
 const Inventory = require('../models/Inventory')
+
+// Create storage engine
+const storage = new GridFsStorage({
+    url: "mongodb+srv://steve123:steve123@thirtyonelabs-5naz3.mongodb.net/test?retryWrites=true&w=majority",
+    file: (req, file) => {
+        return new Promise((resolve, reject) => {
+            crypto.randomBytes(16, (err, buf) => {
+                if (err) {
+                    return reject(err);
+                }
+                const filename = file.originalname;
+                const fileInfo = {
+                    filename: filename,
+                    bucketName: "uploads"
+                };
+                resolve(fileInfo);
+            });
+        });
+    }
+});
+
+const upload = multer({ storage });
+
+// @route   POST  api/inventory/image
+// @desc    Add new inventoryImage
+// @access  Private
+router.post("/image", [auth,
+    [
+        upload.single("img")
+    ]
+],
+    async (req, res, err) => {
+        res.send(req.files);
+        console.log("Image Uploaded")
+    });
 
 
 // @route   GET  api/inventory
@@ -35,7 +74,7 @@ router.post('/', [auth,
             return res.status(400).json({ errors: errors.array() });
         }
 
-        const { name, quantity, thc, cbd, total, description, price, image } = req.body;
+        const { name, quantity, thc, cbd, total, description, price } = req.body;
 
         try {
             const newInventory = new Inventory({
@@ -46,7 +85,6 @@ router.post('/', [auth,
                 total,
                 description,
                 price,
-                image,
                 user: req.user.id
             })
 
@@ -64,7 +102,7 @@ router.post('/', [auth,
 // @desc    Update product inventory
 // @access  Private
 router.put('/:id', auth, async (req, res) => {
-    const { name, quantity, thc, cbd, total, description, price, image } = req.body;
+    const { name, quantity, thc, cbd, total, description, price } = req.body;
 
     //Build contact object
     const inventoryFields = {};
@@ -75,7 +113,6 @@ router.put('/:id', auth, async (req, res) => {
     if (total) inventoryFields.total = total;
     if (description) inventoryFields.description = description;
     if (price) inventoryFields.price = price;
-    if (image) inventoryFields.image = image;
 
     try {
         let inventory = await Inventory.findById(req.params.id)

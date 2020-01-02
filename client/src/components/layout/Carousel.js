@@ -1,5 +1,4 @@
 import React from 'react';
-import Slider from 'infinite-react-carousel';
 
 import './Carousel.css'
 
@@ -8,10 +7,10 @@ import sliderImage2 from '../../images/NLMLAB5b.jpg'
 import sliderImage3 from '../../images/NLMLAB8b.jpg'
 import sliderImage4 from '../../images/NLMLAB111920x1080c.jpg'
 
-const Carousel = (props) => {
+const Carousel = () => {
 
     return (
-        <Slider className="background">
+        <div className="background">
             <div className="carousel-image-container">
                 <img src={sliderImage1} alt="" className="carousel-image" />
                 <p className="carousel-image-text">Our in-house testing analytics technology maximizes quality control while increasing production. All material is micro-extracted and tested upon delivery, and at key milestones throughout the manufacturing process.</p>
@@ -28,7 +27,7 @@ const Carousel = (props) => {
                 <img src={sliderImage4} alt="" className="carousel-image" />
                 <p className="carousel-image-text">Our proprietary 10-step manufacturing process is 10 years in the making. By focusing on reducing heat damage and oxidation, we mitigate product degradation while increasing consistency and throughput.</p>
             </div>
-        </Slider>
+        </div>
     )
 };
 

@@ -32,11 +32,7 @@ const InventorySchema = mongoose.Schema({
     price: {
         type: String,
         required: true
-    },
-    image: {
-        data: Buffer,
-        contentType: String
-    },    
+    }, 
     date: {
         type: Date,
         default: Date.now

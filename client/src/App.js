@@ -14,6 +14,7 @@ import About from './components/pages/About'
 import Login from './components/auth/Login'
 import AdminPanel from './components/pages/AdminPanel'
 import PrivateRoute from './components/routing/PrivateRoute'
+import ScrollToTop from './utils/ScrollToTop'
 
 import InventoryState from './context/inventory/InventoryState'
 import AuthState from './context/auth/AuthState'
@@ -35,17 +36,19 @@ const App = () => {
               <Fragment>
                 <Navbar />
                 <div className="container">
-                  <Switch>
-                    <Route exact path='/' component={LandingPage} />
-                    <Route exact path='/home' component={Home} />
-                    <Route exact path='/our_process' component={OurProcess} />
-                    <Route exact path='/our_product' component={OurProduct} />
-                    <Route exact path='/inventory' component={Inventory} />
-                    <Route exact path='/aboutus' component={About} />
-                    <Route exact path='/login' component={Login} />
-                    <PrivateRoute exact path='/admin' component={AdminPanel} />
-                    {/* <Route exact path='/register' component={Register} /> */}
-                  </Switch>
+                  <ScrollToTop>
+                    <Switch>
+                      <Route exact path='/' component={LandingPage} />
+                      <Route exact path='/home' component={Home} />
+                      <Route exact path='/our_process' component={OurProcess} />
+                      <Route exact path='/our_product' component={OurProduct} />
+                      <Route exact path='/inventory' component={Inventory} />
+                      <Route exact path='/aboutus' component={About} />
+                      <Route exact path='/login' component={Login} />
+                      <PrivateRoute exact path='/admin' component={AdminPanel} />
+                      {/* <Route exact path='/register' component={Register} /> */}
+                    </Switch>
+                  </ScrollToTop>
                 </div>
                 <Footer />
               </Fragment>

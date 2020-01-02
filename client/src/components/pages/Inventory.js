@@ -7,6 +7,11 @@ import NA from '../../images/noAdd-icon.svg'
 import C3 from '../../images/catIII-icon.svg'
 import THCP from '../../images/thcpotent-icon.svg'
 import T7 from '../../images/type7-icon.svg'
+import Product1 from '../../images/PHTC5.jpg'
+import Product2 from '../../images/PHTC6.jpg'
+import Product3 from '../../images/MAXBC2.jpg'
+import Product4 from '../../images/SZSBC1.jpg'
+
 import './Inventory.css';
 
 const Inventory = () => {
@@ -22,8 +27,12 @@ const Inventory = () => {
 
     return (
         <Fragment>
-            <div>
-                <img src={InventoryMain} alt="" />
+            <div className="inventoryHeaderContainer">
+                <div className="inventoryImageContainer">
+                    <div className="inventoryImage">
+                        <img src={InventoryMain} alt="" />
+                    </div>
+                </div>
                 <ul className="iconContainer">
                     <li><img src={PG} alt="" className="icon" /></li>
                     <li><img src={T7} alt="" className="icon" /></li>
@@ -36,11 +45,13 @@ const Inventory = () => {
                     <li className="iconTitle">Category III<br />compliant</li>
                     <li className="iconTitle">No additives</li>
                 </ul>
-                <h2 className="productTitle">Our Inventory</h2>
             </div>
+                <h2 className="productTitle">Our Inventory</h2>
             <div>
                 <div className="productContainer">
-                    <img className='productItemImage' src="" alt="" />
+                    <div className="productImageContainer">
+                        <img className='productItemImage' src={Product1} alt="" />
+                    </div>
                     <div>
                         <p className='productSpecs'>Lot:</p>
                         <p className='productSpecs'>Quantity:</p>
@@ -63,7 +74,9 @@ const Inventory = () => {
                         <p className='productSpecs'>Price: $6,595/L</p>
                         <button className="btn btn-danger">Add to List</button>
                     </div>
-                    <img className='productItemImage' src="" alt="" />
+                    <div className="productImageContainer">
+                        <img className='productItemImage' src={Product2} alt="" />
+                    </div>
                     <div>
                         <p className='productSpecs'>Lot:</p>
                         <p className='productSpecs'>Quantity:</p>
@@ -86,7 +99,9 @@ const Inventory = () => {
                         <p className='productSpecs'>Price: $6,575/L</p>
                         <button className="btn btn-danger">Add to List</button>
                     </div>
-                    <img className='productItemImage' src="" alt="" />
+                    <div className="productImageContainer">
+                        <img className='productItemImage' src={Product3} alt="" />
+                    </div>
                     <div>
                         <p className='productSpecs'>Lot:</p>
                         <p className='productSpecs'>Quantity:</p>
@@ -109,7 +124,9 @@ const Inventory = () => {
                         <p className='productSpecs'>Price: $6,455/L</p>
                         <button className="btn btn-danger">Add to List</button>
                     </div>
-                    <img className='productItemImage' src="" alt="" />
+                    <div className="productImageContainer">
+                        <img className='productItemImage' src={Product4} alt="" />
+                    </div>
                     <div>
                         <p className='productSpecs'>Lot:</p>
                         <p className='productSpecs'>Quantity:</p>
@@ -132,7 +149,9 @@ const Inventory = () => {
                         <p className='productSpecs'>Price: $6,220/L</p>
                         <button className="btn btn-danger">Add to List</button>
                     </div>
-                    <img className='productItemImage' src="" alt="" />
+                    <div className="productImageContainer">
+                        <img className='productItemImage' src={Product1} alt="" />
+                    </div>
                     <div>
                         <p className='productSpecs'>Lot:</p>
                         <p className='productSpecs'>Quantity:</p>
@@ -155,7 +174,9 @@ const Inventory = () => {
                         <p className='productSpecs'>Price: $5,680/L</p>
                         <button className="btn btn-danger">Add to List</button>
                     </div>
-                    <img className='productItemImage' src="" alt="" />
+                    <div className="productImageContainer">
+                        <img className='productItemImage' src={Product2} alt="" />
+                    </div>
                     <div>
                         <p className='productSpecs'>Lot:</p>
                         <p className='productSpecs'>Quantity:</p>
@@ -178,7 +199,9 @@ const Inventory = () => {
                         <p className='productSpecs'>Price: DUE 11/22</p>
                         <button className="btn btn-danger">Add to List</button>
                     </div>
-                    <img className='productItemImage' src="" alt="" />
+                    <div className="productImageContainer">
+                        <img className='productItemImage' src={Product3} alt="" />
+                    </div>
                     <div>
                         <p className='productSpecs'>Lot:</p>
                         <p className='productSpecs'>Quantity:</p>

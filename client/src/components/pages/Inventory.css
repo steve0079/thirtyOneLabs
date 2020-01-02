@@ -1,41 +1,49 @@
 .productTitle {
-    position: absolute;
-    top:50%;
-    left: 30%;
-    width: 750px;
+    display: grid;
+    justify-items: center;
     background-color: rgba(65, 115, 142);
     font-family: 'Avenir Next', sans-serif;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: 1px;
     color: white;
-    padding: 5px 40px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 4px #333;
+}
+
+.inventoryHeaderContainer {
+}
+
+.inventoryImageContainer {
+    margin-top: 30px;
+    overflow: hidden;
+    height: 40vh;
+}
+
+.inventoryImage {
+    width: 100%;
 }
 
 .iconContainer {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 20px;
     position: absolute;
-    top: 30%;
     left: 30%;
+    top: 22%;
+    justify-items: center;
+    grid-template-columns: repeat(5, 10rem);
 }
 
 .icon {
-    display: grid;
-    justify-items: center;
-    width: 6rem;
-    margin-bottom: 10px;
+    width: 75px;
 }
 
 .iconTitle {
-    text-align: center;
     font-family: 'Avenir Next', sans-serif;
-    color: rgba(65, 115, 142);
+    color: rgb(65, 115, 142);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
+    text-align: center;
 }
 
 .productContainer {
@@ -43,30 +51,36 @@
     justify-content: center;
     position: relative;
     grid-template-columns: 250px 125px 125px 600px 150px;
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: repeat(auto, auto);
     grid-column-gap: 30px;
     grid-row-gap: 15px;
+    padding: 20px 0;
+}
+
+.productImageContainer {
+    width: 200px;
+    height: 175px;
+    border: 1px solid rgb(65, 115, 142);
+    margin: 0 30px 10px;
+    overflow: hidden;
 }
 
 .productItemImage {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    background-color: #999;
-    margin: 0 30px 10px;
+    width: 430px;
+    margin: 0 -130px;
 }
 
 .productSpecs {
     font-family: 'Avenir Next', sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 .productInfo {
     font-family: 'Avenir Next', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
