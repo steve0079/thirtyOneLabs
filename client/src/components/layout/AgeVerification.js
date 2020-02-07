@@ -4,14 +4,8 @@ import AgeContext from '../../context/age/ageContext'
 
 import './AgeVerification.css';
 
-import logo from '../../images/31labs_logo_horz_rev.png'
-
 const AgeVerification = () => {
 
-    const logoStyle = {
-        height: '50%',
-        width: '50%'
-    }
 
     const ageContext = useContext(AgeContext)
 
@@ -19,15 +13,15 @@ const AgeVerification = () => {
 
     return (
         <div>
-            <div className="age-verification">
-                <h1>
-                    <img style={logoStyle} src={logo} alt="ThirtyOne Labs" />
-                </h1>
-                <p className="ageStatement">Must be 21 years or older to enter.</p>
-                <p className="ageSubtext">Please click enter to verify your age to continue.</p>
-                <div className="">
-                <Link to='/home'><button className="btn btn-danger" onClick={() => isAgeVerified()}>Enter</button></Link>
-                    <a href="http://google.com"> <button className="btn btn-dark age-button">Exit</button></a>
+            <div className="verify-container">
+                <div className="blank-space"></div>
+                <div className="verify-text">
+                    <h3>Must be 21 years or older to enter.</h3>
+                    <p>Please click enter to verify your age to continue.</p>
+                </div>
+                <div className="verify-btns">
+                    <Link to='/home'><button className="btn btn-danger" onClick={() => isAgeVerified()}>Enter</button></Link>
+                    <a href="http://google.com"> <button className="btn btn-dark">Exit</button></a>
                 </div>
             </div>
         </div>

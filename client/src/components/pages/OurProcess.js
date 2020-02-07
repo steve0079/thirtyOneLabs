@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import AgeContext from '../../context/age/ageContext'
 
 import ProcessImage from '../../images/NLMLAB131920x1080b.jpg'
-import Carousel from '../layout/Carousel'
+import SimpleSlider from '../layout/Carousel'
 import './OurProcess.css'
 
 const OurProcess = () => {
@@ -36,7 +36,7 @@ const OurProcess = () => {
                     </div>
             </div>
             <div>
-            <Carousel />
+            <SimpleSlider />
             </div>
         </Fragment>
     )

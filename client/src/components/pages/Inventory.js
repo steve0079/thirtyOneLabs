@@ -1,7 +1,6 @@
 import React, { Fragment, useContext, useEffect } from 'react'
 import AgeContext from '../../context/age/ageContext'
 
-import InventoryMain from '../../images/inventory_main.jpg'
 import PG from '../../images/pg-icon.svg'
 import NA from '../../images/noAdd-icon.svg'
 import C3 from '../../images/catIII-icon.svg'
@@ -28,25 +27,20 @@ const Inventory = () => {
     return (
         <Fragment>
             <div className="inventoryHeaderContainer">
-                <div className="inventoryImageContainer">
-                    <div className="inventoryImage">
-                        <img src={InventoryMain} alt="" />
-                    </div>
+                <div className="iconContainer">
+                    <div><img src={PG} alt="" className="icon" /></div>
+                    <div><img src={T7} alt="" className="icon" /></div>
+                    <div><img src={THCP} alt="" className="icon" /></div>
+                    <div><img src={C3} alt="" className="icon" /></div>
+                    <div><img src={NA} alt="" className="icon" /></div>
+                    <div className="iconTitle">Premium-grade<br />THC distillate</div>
+                    <div className="iconTitle">Type 7<br />Extraction</div>
+                    <div className="iconTitle">THC Potency<br />90%+</div>
+                    <div className="iconTitle">Category III<br />compdivant</div>
+                    <div className="iconTitle">No additives</div>
                 </div>
-                <ul className="iconContainer">
-                    <li><img src={PG} alt="" className="icon" /></li>
-                    <li><img src={T7} alt="" className="icon" /></li>
-                    <li><img src={THCP} alt="" className="icon" /></li>
-                    <li><img src={C3} alt="" className="icon" /></li>
-                    <li><img src={NA} alt="" className="icon" /></li>
-                    <li className="iconTitle">Premium-grade<br />THC distillate</li>
-                    <li className="iconTitle">Type 7<br />Extraction</li>
-                    <li className="iconTitle">THC Potency<br />90%+</li>
-                    <li className="iconTitle">Category III<br />compliant</li>
-                    <li className="iconTitle">No additives</li>
-                </ul>
             </div>
-                <h2 className="productTitle">Our Inventory</h2>
+            <h2 className="productTitle">Our Inventory</h2>
             <div>
                 <div className="productContainer">
                     <div className="productImageContainer">
@@ -68,7 +62,7 @@ const Inventory = () => {
                     </div>
                     <div>
                         <p className='productSpecs'>Description</p>
-                        <p>Nam vitae sapien nulla. Fusce sit amet libero et tellus ultrices finibus feugiat eu elit. Curabitur euismod felis justo, sed accumsan tortor sodales vel. Sed finibus purus non massa efficitur tristique. Duis in arcu odio. Vivamus risus ex, viverra id molestie quis.</p>
+                        <p className='productDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorem eum eveniet saepe sed obcaecati nulla, earum suscipit amet ab tenetur praesentium at, odit doloribus nobis eius qui sunt temporibus, non sint harum voluptates rerum dignissimos iure. Repudiandae, ullam repellat?</p>
                     </div>
                     <div>
                         <p className='productSpecs'>Price: $6,595/L</p>
@@ -93,7 +87,7 @@ const Inventory = () => {
                     </div>
                     <div>
                         <p className='productSpecs'>Description</p>
-                        <p>Nam vitae sapien nulla. Fusce sit amet libero et tellus ultrices finibus feugiat eu elit. Curabitur euismod felis justo, sed accumsan tortor sodales vel. Sed finibus purus non massa efficitur tristique. Duis in arcu odio. Vivamus risus ex, viverra id molestie quis.</p>
+                        <p className='productDescription'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, voluptatum maiores. Perspiciatis ratione facilis placeat quae eius accusamus. Praesentium aspernatur tempore, sunt esse qui veniam corporis molestias laborum autem porro dolorem odit delectus perferendis, nostrum et commodi at doloribus eligendi, minima dicta perspiciatis quasi. Aliquid illo delectus, similique quaerat blanditiis sunt, praesentium perferendis placeat quibusdam, facilis earum!</p>
                     </div>
                     <div>
                         <p className='productSpecs'>Price: $6,575/L</p>
@@ -118,7 +112,7 @@ const Inventory = () => {
                     </div>
                     <div>
                         <p className='productSpecs'>Description</p>
-                        <p>Nam vitae sapien nulla. Fusce sit amet libero et tellus ultrices finibus feugiat eu elit. Curabitur euismod felis justo, sed accumsan tortor sodales vel. Sed finibus purus non massa efficitur tristique. Duis in arcu odio. Vivamus risus ex, viverra id molestie quis.</p>
+                        <p className='productDescription'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, at tenetur rem illo ea dignissimos quibusdam harum sunt quo aut minus molestiae sint ipsum atque similique aliquid facilis nam beatae delectus expedita porro? Aliquid expedita quibusdam rerum esse impedit consequuntur quam libero.</p>
                     </div>
                     <div>
                         <p className='productSpecs'>Price: $6,455/L</p>
@@ -143,7 +137,7 @@ const Inventory = () => {
                     </div>
                     <div>
                         <p className='productSpecs'>Description</p>
-                        <p>Nam vitae sapien nulla. Fusce sit amet libero et tellus ultrices finibus feugiat eu elit. Curabitur euismod felis justo, sed accumsan tortor sodales vel. Sed finibus purus non massa efficitur tristique. Duis in arcu odio. Vivamus risus ex, viverra id molestie quis.</p>
+                        <p className='productDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque ea et doloremque nostrum adipisci officiis fugiat, fugit repudiandae qui! Sint, ipsa! Corrupti voluptatibus consectetur animi, consequuntur cumque iste blanditiis mollitia eos at eaque voluptatem.</p>
                     </div>
                     <div>
                         <p className='productSpecs'>Price: $6,220/L</p>
@@ -168,7 +162,7 @@ const Inventory = () => {
                     </div>
                     <div>
                         <p className='productSpecs'>Description</p>
-                        <p>Nam vitae sapien nulla. Fusce sit amet libero et tellus ultrices finibus feugiat eu elit. Curabitur euismod felis justo, sed accumsan tortor sodales vel. Sed finibus purus non massa efficitur tristique. Duis in arcu odio. Vivamus risus ex, viverra id molestie quis.</p>
+                        <p className='productDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic ipsa animi asperiores velit id eligendi, in quam nisi perferendis illo vitae alias veritatis temporibus amet. Exercitationem hic facere, magni enim eos tempore numquam ipsam? Ipsum mollitia vel illum? Consequuntur!</p>
                     </div>
                     <div>
                         <p className='productSpecs'>Price: $5,680/L</p>
@@ -193,7 +187,7 @@ const Inventory = () => {
                     </div>
                     <div>
                         <p className='productSpecs'>Description</p>
-                        <p>Nam vitae sapien nulla. Fusce sit amet libero et tellus ultrices finibus feugiat eu elit. Curabitur euismod felis justo, sed accumsan tortor sodales vel. Sed finibus purus non massa efficitur tristique. Duis in arcu odio. Vivamus risus ex, viverra id molestie quis.</p>
+                        <p className='productDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis facilis ipsa, minus sit beatae, ratione repudiandae enim ipsum nesciunt facere maxime! Praesentium doloremque earum et ea beatae delectus dolores pariatur nobis soluta? Omnis vero, reiciendis qui facere suscipit doloribus inventore sit expedita ad aliquid at. Vel deserunt impedit omnis!</p>
                     </div>
                     <div>
                         <p className='productSpecs'>Price: DUE 11/22</p>
@@ -218,7 +212,7 @@ const Inventory = () => {
                     </div>
                     <div>
                         <p className='productSpecs'>Description</p>
-                        <p>Nam vitae sapien nulla. Fusce sit amet libero et tellus ultrices finibus feugiat eu elit. Curabitur euismod felis justo, sed accumsan tortor sodales vel. Sed finibus purus non massa efficitur tristique. Duis in arcu odio. Vivamus risus ex, viverra id molestie quis.</p>
+                        <p className='productDescription'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, voluptates magni! Blanditiis iusto quis, facere ipsam delectus inventore est? Sapiente delectus cupiditate deleniti obcaecati officia recusandae magni aspernatur, aliquam accusamus!</p>
                     </div>
                     <div>
                         <p className='productSpecs'>Price:SOLD OUT</p>

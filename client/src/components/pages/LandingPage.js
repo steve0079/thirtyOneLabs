@@ -1,6 +1,5 @@
 import React, { useEffect, Fragment } from 'react'
 import './LandingPage.css';
-import homeimage from '../../images/NLMLAB_6_1500x.jpg'
 import AgeVerification from '../layout/AgeVerification'
 
 const LandingPage = () => {
@@ -12,13 +11,9 @@ const LandingPage = () => {
     },[])
 
     return (
-        <Fragment>
-            <div className="verify-age">
+        <Fragment>>
                 <AgeVerification />
-                <div className="verify-main-image">
-                    <img src={homeimage} alt="" />
-                </div>
-            </div>
+                <div className="verify-main-image"></div>
         </Fragment>
     )
 }

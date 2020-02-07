@@ -1,33 +1,132 @@
 /* Navbar */
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    z-index: 3;
-    position: fixed;
-    width: 100%;
-    height: 120px;
-    border-bottom: 2px solid white;
-    box-shadow: 0 3px 6px #333;
-
+@media(min-width:769px) {
+    .nav {
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        height: 8rem;
+        border-bottom: 2px solid white;
+        box-shadow: 0 3px 6px #333;
+        background: url('../../images/31labs_logo_horz_rev.png');
+        background-color: rgb(65, 115, 142);
+        background-repeat: no-repeat;
+        background-position: 1rem center;
+        background-size: 13rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 20px;
+    }
+    .menu-nav {
+        font-family: 'Avenir Next', sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    .menu-nav-select {
+        margin: 0 1rem;
+        align-self: flex-end;
+    }
+    .menu-nav-select:hover {
+        color: #f33f40;
+    }
 }
 
-.navbar-links {
-    display: flex;
-    font-family: 'Avenir Next', sans-serif;
-    font-weight: 200;
-    list-style: none;
-}
+@media only screen and (max-width:768px) {
+    .nav {
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        height: 20vh;
+        border-bottom: 2px solid white;
+        box-shadow: 0 3px 6px #333;
+        background: url('../../images/31labs_logo_horz_rev.png');
+        background-color: rgb(65, 115, 142);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+    }
 
-.navbar-link {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.45rem;
-    margin: 0 0.25rem;
-}
+    .menu-nav {
+        visibility: hidden;
+    }
 
-.navbar-link:hover {
-    color: #f33f40;
+    .menu-btn {
+        z-index: 3;
+        right: 1rem;
+        left: 1rem;
+        height: 28px;
+        width: 28px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__burger {
+        position: absolute;
+        right: 1.5rem;
+        top: 2rem;
+        width: 28px;
+        height: 3px;
+        background: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__burger:before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        width: 28px;
+        height: 3px;
+        background: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__burger:after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__burger.open {
+        transform: rotate(720deg);
+        background: transparent;
+    }
+    .menu-btn__burger.open:before {
+        transform: rotate(45deg) translate(5px, 8px);
+    }
+    .menu-btn__burger.open:after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+    }
+
+    .menu-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        background: rgba(65, 115, 142, .8);
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateY(-100%);
+    }
+
+    .menu-nav.open {
+        transform: translateY(0);
+    }
+
+    .menu-nav-select {
+        transform: translateX(100vw);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu-nav-select.open {
+        transform: translateX(0);
+    }
+
 }

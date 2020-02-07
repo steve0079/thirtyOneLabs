@@ -38,8 +38,7 @@
 }
 
 .process_text_container {
-    display: grid;
-    padding: 120px 25%;
+    padding: 0 20%;
     hyphens: none;
     text-align: center;
     background-color: #333;
@@ -53,6 +52,6 @@
     font-style: normal;
     color: white;
     hyphens: none;
-    padding: 20px 0 30px 0;
+    padding-top: 20px;
 }
 

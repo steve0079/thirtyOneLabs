@@ -1,34 +1,131 @@
-.age-verification {
-    display: grid;
-    position: absolute;
-    height: 350px;
-    width: 600px;
-    top: 33.3%;
-    left: 30%;
-    background-color: rgba(65, 115, 142, 1);
-    border-radius: 12px;
-    box-shadow: 8px 6px 10px #333;
-    z-index: 2;
-    align-content: center;
-    text-align: center;
+@media(min-width: 901px) {
+    .verify-container {
+        position: absolute;
+        height: 50vh;
+        width: 50vw;
+        top: 30%;
+        left: 25%;
+        background: url('../../images/31labs_logo_rev.png');
+        background-color: rgb(65, 115, 142);
+        background-repeat: no-repeat;
+        background-position: left 0;
+        background-size: 20rem;
+        border-radius: 12px;
+        box-shadow: 8px 6px 10px #333;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+    p {
+        font-weight: 100;
+        font-size: 1.25rem;
+    }
+    .blank-space {
+        flex: 5;
+    }
+    .verify-text {
+        flex: 1;
+        font-family: 'Avenir Next', sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    .verify-btns {
+        flex: 1;
+        margin: 1.5rem auto;
+    }
 }
 
-.ageStatement {
-    font-size: 1.75rem;
-    font-family: 'Avenir Next', sans-serif;
-    font-weight: 100;
-    color: white;
-
+@media (min-width: 768px) {
+    .verify-container {
+        position: absolute;
+        height: 50vh;
+        width: 50vw;
+        top: 30%;
+        left: 25%;
+        background: url('../../images/31labs_logo_horz_rev.png');
+        background-color: rgb(65, 115, 142);
+        background-repeat: no-repeat;
+        background-position: center 10%;
+        background-size: 18rem;
+        border-radius: 12px;
+        box-shadow: 8px 6px 10px #333;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2rem;
+        padding-bottom: 1.8rem;
+    }
+    p {
+        font-weight: 100;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .blank-space {
+        flex: 2.5;
+    }
+    .verify-text {
+        flex: 1;
+        font-family: 'Avenir Next', sans-serif;
+        color: #fff;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .verify-btns {
+        flex: 1;
+        margin: 1.5rem auto;
+    }
 }
 
-.ageSubtext {
-    font-size: 1rem;
-    font-family: 'Avenir Next', sans-serif;
-    font-weight: 100;
-    color: white;
-    margin-bottom: 15px;
-}
-
-.age-button {
-    margin: 15px;
+@media(max-width: 767px) {
+    .verify-container {
+        position: absolute;
+        height: 50vh;
+        width: 50vw;
+        top: 30%;
+        left: 25%;
+        background: url('../../images/31labs_logo_rev.png');
+        background-color: rgb(65, 115, 142);
+        background-repeat: no-repeat;
+        background-position: center 1%;
+        background-size: 10rem;
+        border-radius: 12px;
+        box-shadow: 8px 6px 10px #333;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    h3 {
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 1.75rem;
+        padding: 2rem 0;
+    }
+    p {
+        font-weight: 100;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
+    .blank-space {
+        flex: 2.5;
+    }
+    .verify-text {
+        flex: 1;
+        font-family: 'Avenir Next', sans-serif;
+        color: #fff;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .verify-btns {
+        flex: 1;
+        margin: 1.5rem auto;
+    }
 }

@@ -12,36 +12,39 @@
 }
 
 .inventoryHeaderContainer {
+    display: grid;
+    margin-top: 120px;
+    padding-top: 120px;
+    background: url(../../images/inventory_main.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 60px;
+    overflow: hidden;
 }
 
 .inventoryImageContainer {
     margin-top: 30px;
     overflow: hidden;
-    height: 40vh;
-}
-
-.inventoryImage {
-    width: 100%;
+    height: 50vh;
 }
 
 .iconContainer {
-    display: grid;
-    position: absolute;
-    left: 30%;
-    top: 22%;
-    justify-items: center;
-    grid-template-columns: repeat(5, 10rem);
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20%;
 }
 
 .icon {
-    width: 75px;
+    height: 100px;
 }
 
 .iconTitle {
     font-family: 'Avenir Next', sans-serif;
     color: rgb(65, 115, 142);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     line-height: 1.5rem;
     text-align: center;
 }
@@ -49,17 +52,15 @@
 .productContainer {
     display: grid;
     justify-content: center;
-    position: relative;
-    grid-template-columns: 250px 125px 125px 600px 150px;
-    grid-template-rows: repeat(auto, auto);
-    grid-column-gap: 30px;
-    grid-row-gap: 15px;
-    padding: 20px 0;
+    grid-template-columns: 20% 8% 7% 35% 10%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    padding: 2rem 0;
 }
 
 .productImageContainer {
-    width: 200px;
-    height: 175px;
+    width: 250px;
+    height: 200px;
     border: 1px solid rgb(65, 115, 142);
     margin: 0 30px 10px;
     overflow: hidden;
@@ -67,7 +68,7 @@
 
 .productItemImage {
     width: 430px;
-    margin: 0 -130px;
+    margin: 0 -100px;
 }
 
 .productSpecs {
@@ -84,3 +85,7 @@
     line-height: 2rem;
 }
 
+.productDescription {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
