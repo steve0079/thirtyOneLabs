@@ -28,11 +28,11 @@ const Inventory = () => {
         <Fragment>
             <div className="inventoryHeaderContainer">
                 <div className="iconContainer">
-                    <div><img src={PG} alt="" className="icon" /></div>
+                    {/* <div><img src={PG} alt="" className="icon" /></div>
                     <div><img src={T7} alt="" className="icon" /></div>
                     <div><img src={THCP} alt="" className="icon" /></div>
                     <div><img src={C3} alt="" className="icon" /></div>
-                    <div><img src={NA} alt="" className="icon" /></div>
+                    <div><img src={NA} alt="" className="icon" /></div> */}
                     <div className="iconTitle">Premium-grade<br />THC distillate</div>
                     <div className="iconTitle">Type 7<br />Extraction</div>
                     <div className="iconTitle">THC Potency<br />90%+</div>
