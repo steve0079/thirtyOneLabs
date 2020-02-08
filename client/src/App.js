@@ -10,7 +10,7 @@ import OurProcess from './components/pages/OurProcess'
 import OurProduct from './components/pages/OurProduct'
 import Inventory from './components/pages/Inventory'
 import About from './components/pages/About'
-// import Register from './components/auth/Register'
+import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import AdminPanel from './components/pages/AdminPanel'
 import PrivateRoute from './components/routing/PrivateRoute'
@@ -46,7 +46,7 @@ const App = () => {
                       <Route exact path='/aboutus' component={About} />
                       <Route exact path='/login' component={Login} />
                       <PrivateRoute exact path='/admin' component={AdminPanel} />
-                      {/* <Route exact path='/register' component={Register} /> */}
+                      <Route exact path='/register' component={Register} />
                     </Switch>
                   </ScrollToTop>
                 </div>

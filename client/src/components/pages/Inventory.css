@@ -22,29 +22,23 @@
     overflow: hidden;
 }
 
-.inventoryImageContainer {
-    margin-top: 30px;
-    overflow: hidden;
-    height: 50vh;
-}
-
 .iconContainer {
     display: flex;
     justify-content: space-around;
-    align-content: space-between;
     flex-wrap: wrap;
     margin: 0 20%;
 }
 
 .icon {
-    height: 100px;
+    width: 55%;
+    margin-left: 25%;
 }
 
 .iconTitle {
     font-family: 'Avenir Next', sans-serif;
     color: rgb(65, 115, 142);
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     text-align: center;
 }
