@@ -3,7 +3,7 @@
     background-color: rgb(65, 115, 142);
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
+    background-size: cover;
     height: 100vh;
-    margin-top: 14vh;
+    margin-top: 10vh;
 }
